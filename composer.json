@@ -1,0 +1,15 @@
+{
+  "require": {
+    "squizlabs/php_codesniffer": "@stable",
+    "friendsofphp/php-cs-fixer": "@stable",
+    "phpmd/phpmd": "@stable",
+    "phpstan/phpstan": "@stable",
+    "vimeo/psalm": "@stable",
+    "ext-mbstring": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "\\": "src/"
+    }
+  }
+}
