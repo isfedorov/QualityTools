@@ -1,0 +1,9 @@
+/composer.phar
+/vendor/
+/.vagrant/
+.idea/**/private/**
+.idea/dataSources
+.idea/dataSources.*
+.idea/httpRequests/*
+.idea/shelf
+.idea/workspace.xml
