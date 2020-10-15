@@ -5,7 +5,7 @@
     "phpmd/phpmd": "@stable",
     "phpstan/phpstan": "@stable",
     "vimeo/psalm": "@stable",
-    "ext-mbstring": "*"
+    "phpunit/phpunit": "@stable"
   },
   "autoload": {
     "psr-4": {

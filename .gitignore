@@ -7,3 +7,4 @@
 .idea/httpRequests/*
 .idea/shelf
 .idea/workspace.xml
+/.php_cs.cache
