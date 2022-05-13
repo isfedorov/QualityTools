@@ -3,5 +3,5 @@ services:
   php:
     image: php:latest
     volumes:
-    - .:/opt/project
+      - .:/opt/project
     command: bash -c "tail -f /dev/null"
