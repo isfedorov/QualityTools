@@ -11,5 +11,4 @@
 /phpunit.phar
 /build/
 /phing-latest.phar
-/.phpunit.result.cache
-/.php-cs-fixer.cache
+/*.cache

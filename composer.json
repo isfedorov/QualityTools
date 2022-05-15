@@ -17,7 +17,7 @@
         "behat/behat": "@stable",
         "squizlabs/php_codesniffer": "@stable",
         "phpmd/phpmd": "@stable",
-        "friendsofphp/php-cs-fixer": "v2.19.3",
+        "friendsofphp/php-cs-fixer": "@stable",
         "vimeo/psalm": "@stable",
         "phpstan/phpstan": "@stable",
         "codeception/module-phpbrowser": "^1.0.0",
