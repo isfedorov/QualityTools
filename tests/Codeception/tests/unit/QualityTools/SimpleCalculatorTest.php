@@ -1,6 +1,8 @@
 <?php
 namespace QualityTools\Tests\Codeception\tests\unit\QualityTools;
 
+use QualityTools\SimpleCalculator;
+
 class SimpleCalculatorTest extends \Codeception\Test\Unit
 {
     /**
@@ -17,8 +19,9 @@ class SimpleCalculatorTest extends \Codeception\Test\Unit
     }
 
     // tests
-    public function testAddition()
+    public function testSubstraction()
     {
-
+        $calc = new SimpleCalculator();
+        self::assertEquals(1, $calc->sub(2, 1));
     }
 }

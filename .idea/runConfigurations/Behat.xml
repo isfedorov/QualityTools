@@ -1,0 +1,6 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Behat" type="PhpBehatConfigurationType">
+    <BehatRunner file="$PROJECT_DIR$/tests/Behat/features/SimpleCalculator.feature" scenario="" scope="File" />
+    <method v="2" />
+  </configuration>
+</component>

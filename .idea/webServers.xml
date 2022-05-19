@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="5bc2f4ae-fe13-4d6e-a995-fa33dae560f5" name="sftp">
+        <fileTransfer rootFolder="/home/jetbrains" accessType="SFTP" host="localhost" port="3022" sshConfigId="45b5d26e-065e-4e8e-9970-8d573d4ea3cb" sshConfig="jetbrains@localhost:3022 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

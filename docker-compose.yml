@@ -1,7 +1,11 @@
 version: '3'
 services:
-  php:
-    image: php:latest
+  php_run:
+    build: .
+    volumes:
+      - .:/opt/project
+  php_exec:
+    build: .
     volumes:
       - .:/opt/project
     command: bash -c "tail -f /dev/null"

@@ -1,0 +1,6 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="SimpleCalculatorCest.php::tryToAdd" type="CodeceptionConfigurationType" factoryName="Codeception">
+    <PhpTestRunnerSettings file="$PROJECT_DIR$/tests/Codeception/tests/functional/QualityTools/SimpleCalculatorCest.php" method="tryToAdd" scope="Method" />
+    <method v="2" />
+  </configuration>
+</component>

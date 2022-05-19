@@ -5,24 +5,27 @@
       <tool tool_name="Behat">
         <settings>
           <configurations>
-            <local_configuration executable_path="$PROJECT_DIR$/vendor/behat/behat/bin/behat" />
-            <configuration_by_sdk interpreter_id="8f189ab3-f7e0-40b8-a874-933676d1464b" executable_path="/opt/project/vendor/behat/behat/bin/behat" />
+            <local_configuration configuration_file_path="$PROJECT_DIR$/behat.yml" executable_path="$PROJECT_DIR$/vendor/behat/behat/bin/behat" use_configuration_file="true" />
+            <configuration_by_sdk interpreter_id="8f189ab3-f7e0-40b8-a874-933676d1464b" configuration_file_path="/opt/project/behat.yml" executable_path="/opt/project/vendor/behat/behat/bin/behat" use_configuration_file="true" />
+            <configuration_by_sdk interpreter_id="cf21c523-825e-47d4-94e8-c9001edaff10" configuration_file_path="/opt/project/behat.yml" executable_path="/opt/project/vendor/behat/behat/bin/behat" use_configuration_file="true" />
           </configurations>
         </settings>
       </tool>
       <tool tool_name="Codeception">
         <settings>
           <configurations>
-            <local_configuration executable_path="$PROJECT_DIR$/vendor/codeception/codeception/codecept" />
-            <configuration_by_sdk interpreter_id="8f189ab3-f7e0-40b8-a874-933676d1464b" executable_path="/opt/project/vendor/codeception/codeception/codecept" />
+            <local_configuration configuration_file_path="$PROJECT_DIR$/codeception.yml" executable_path="$PROJECT_DIR$/vendor/codeception/codeception/codecept" use_configuration_file="true" />
+            <configuration_by_sdk interpreter_id="8f189ab3-f7e0-40b8-a874-933676d1464b" configuration_file_path="/opt/project/codeception.yml" executable_path="/opt/project/vendor/codeception/codeception/codecept" use_configuration_file="true" />
+            <configuration_by_sdk interpreter_id="cf21c523-825e-47d4-94e8-c9001edaff10" configuration_file_path="/opt/project/codeception.yml" executable_path="/opt/project/vendor/codeception/codeception/codecept" use_configuration_file="true" />
           </configurations>
         </settings>
       </tool>
       <tool tool_name="PHPSpec">
         <settings>
           <configurations>
-            <local_configuration executable_path="$PROJECT_DIR$/vendor/phpspec/phpspec/bin/phpspec" />
-            <configuration_by_sdk interpreter_id="8f189ab3-f7e0-40b8-a874-933676d1464b" executable_path="/opt/project/vendor/phpspec/phpspec/bin/phpspec" />
+            <local_configuration configuration_file_path="$PROJECT_DIR$/phpspec.yml" executable_path="$PROJECT_DIR$/vendor/phpspec/phpspec/bin/phpspec" use_configuration_file="true" />
+            <configuration_by_sdk interpreter_id="8f189ab3-f7e0-40b8-a874-933676d1464b" configuration_file_path="/opt/project/phpspec.yml" executable_path="/opt/project/vendor/phpspec/phpspec/bin/phpspec" use_configuration_file="true" />
+            <configuration_by_sdk interpreter_id="cf21c523-825e-47d4-94e8-c9001edaff10" configuration_file_path="/opt/project/phpspec.yml" executable_path="/opt/project/vendor/phpspec/phpspec/bin/phpspec" use_configuration_file="true" />
           </configurations>
         </settings>
       </tool>
@@ -35,6 +38,7 @@
           <versions>
             <info id="Local" version="3.8.1" />
             <info id="interpreter-8f189ab3-f7e0-40b8-a874-933676d1464b" version="3.8.1" />
+            <info id="interpreter-cf21c523-825e-47d4-94e8-c9001edaff10" version="3.8.1" />
           </versions>
         </cache>
       </tool>
@@ -43,6 +47,7 @@
           <versions>
             <info id="Local" version="4.1.31" />
             <info id="interpreter-8f189ab3-f7e0-40b8-a874-933676d1464b" version="4.1.31" />
+            <info id="interpreter-cf21c523-825e-47d4-94e8-c9001edaff10" version="4.1.31" />
           </versions>
         </cache>
       </tool>
@@ -51,6 +56,7 @@
           <versions>
             <info id="Local" version="7.2.0" />
             <info id="interpreter-8f189ab3-f7e0-40b8-a874-933676d1464b" version="7.2.0" />
+            <info id="interpreter-cf21c523-825e-47d4-94e8-c9001edaff10" version="7.2.0" />
           </versions>
         </cache>
       </tool>
@@ -59,6 +65,7 @@
           <versions>
             <info id="Local" version="9.5.20" />
             <info id="interpreter-8f189ab3-f7e0-40b8-a874-933676d1464b" version="9.5.20" />
+            <info id="interpreter-cf21c523-825e-47d4-94e8-c9001edaff10" version="9.5.20" />
           </versions>
         </cache>
       </tool>

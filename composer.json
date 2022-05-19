@@ -10,6 +10,7 @@
         }
     },
     "require-dev": {
+        "rector/rector": "@stable",
         "phing/phing": "@stable",
         "phpunit/phpunit": "@stable",
         "codeception/codeception": "@stable",

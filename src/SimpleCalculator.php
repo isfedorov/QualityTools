@@ -8,6 +8,9 @@ class SimpleCalculator
     {
         return $a + $b;
     }
-}
 
-(new SimpleCalculator())->add(1 ,2);
+    public function sub($a, $b)
+    {
+        return $a - $b;
+    }
+}
