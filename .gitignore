@@ -14,3 +14,4 @@
 /*.cache
 /tests/Codeception/tests/_output
 *.log
+/composer.lock
