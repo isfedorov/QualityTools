@@ -1,0 +1,6 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="SimpleCalculatorSpec.php::it_adds_two_numbers" type="PhpSpecConfigurationType" factoryName="PHPSpec">
+    <PhpTestRunnerSettings file="$PROJECT_DIR$/tests/PhpSpec/QualityTools/SimpleCalculatorSpec.php" method="it_adds_two_numbers" scope="Method" />
+    <method v="2" />
+  </configuration>
+</component>
