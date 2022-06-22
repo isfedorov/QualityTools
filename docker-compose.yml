@@ -4,35 +4,70 @@ services:
     build: ./containers/5.6
     volumes:
       - .:/opt/project
+      - ./htdocs:/var/www/html
+    ports:
+      - "2080:80"
   php_56_exec:
     build: ./containers/5.6
     volumes:
       - .:/opt/project
-    command: bash -c "tail -f /dev/null"
+      - ./htdocs:/var/www/html
+    ports:
+      - "3080:80"
   php_71_run:
     build: ./containers/7.1
     volumes:
       - .:/opt/project
+      - ./htdocs:/var/www/html
+    ports:
+      - "4080:80"
   php_71_exec:
     build: ./containers/7.1
     volumes:
       - .:/opt/project
+      - ./htdocs:/var/www/html
+    ports:
+      - "5080:80"
     command: bash -c "tail -f /dev/null"
   php_74_run:
     build: ./containers/7.4
     volumes:
       - .:/opt/project
+      - ./htdocs:/var/www/html
+    ports:
+      - "6080:80"
   php_74_exec:
     build: ./containers/7.4
     volumes:
       - .:/opt/project
-    command: bash -c "tail -f /dev/null"
+      - ./htdocs:/var/www/html
+    ports:
+      - "7080:80"
+  php_80_run:
+    build: ./containers/8.0
+    volumes:
+      - .:/opt/project
+      - ./htdocs:/var/www/html
+    ports:
+      - "8080:80"
+  php_80_exec:
+    build: ./containers/8.0
+    volumes:
+      - .:/opt/project
+      - ./htdocs:/var/www/html
+    ports:
+      - "9080:80"
   php_81_run:
     build: ./containers/8.1
     volumes:
       - .:/opt/project
+      - ./htdocs:/var/www/html
+    ports:
+      - "8081:80"
   php_81_exec:
     build: ./containers/8.1
     volumes:
       - .:/opt/project
-    command: bash -c "tail -f /dev/null"
+      - ./htdocs:/var/www/html
+    ports:
+      - "9081:80"

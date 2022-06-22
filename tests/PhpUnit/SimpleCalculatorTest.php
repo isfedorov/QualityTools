@@ -5,7 +5,7 @@ namespace QualityTools\Tests\PhpUnit;
 use QualityTools\SimpleCalculator;
 use PHPUnit\Framework\TestCase;
 
-class SimpleCalculatorTest extends TestCase
+class SimpleCalculatorTest extends BaseCalculatorTest
 {
 
     public function testAdd()

@@ -13,6 +13,7 @@
         "rector/rector": "@stable",
         "phing/phing": "@stable",
         "phpunit/phpunit": "@stable",
+        "mockery/mockery": "@stable",
         "codeception/codeception": "@stable",
         "phpspec/phpspec": "@stable",
         "behat/behat": "@stable",
@@ -22,7 +23,8 @@
         "vimeo/psalm": "@stable",
         "phpstan/phpstan": "@stable",
         "codeception/module-phpbrowser": "^1.0.0",
-        "codeception/module-asserts": "^1.0.0"
+        "codeception/module-asserts": "^1.0.0",
+        "brianium/paratest": "@stable"
     },
     "scripts": {
         "phpstan": "phpstan analyse -c phpstan-config.neon --memory-limit=4G"
