@@ -7,7 +7,6 @@
 /composer.phar
 /vendor/
 /.vagrant/
-/.php_cs.cache
 /phpunit.phar
 /build/
 /phing-latest.phar

@@ -68,6 +68,5 @@ services:
     build: ./containers/8.1
     volumes:
       - .:/opt/project
-      - ./htdocs:/var/www/html
     ports:
       - "9081:80"
