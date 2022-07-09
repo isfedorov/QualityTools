@@ -1,32 +1,33 @@
 {
-    "autoload": {
-        "psr-4": {
-            "QualityTools\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "QualityTools\\Tests\\": "tests/"
-        }
-    },
-    "require-dev": {
-        "rector/rector": "@stable",
-        "phing/phing": "@stable",
-        "phpunit/phpunit": "@stable",
-        "mockery/mockery": "@stable",
-        "codeception/codeception": "@stable",
-        "phpspec/phpspec": "@stable",
-        "behat/behat": "@stable",
-        "squizlabs/php_codesniffer": "@stable",
-        "phpmd/phpmd": "@stable",
-        "friendsofphp/php-cs-fixer": "@stable",
-        "vimeo/psalm": "@stable",
-        "phpstan/phpstan": "@stable",
-        "codeception/module-phpbrowser": "^1.0.0",
-        "codeception/module-asserts": "^1.0.0",
-        "brianium/paratest": "@stable"
-    },
-    "scripts": {
-        "phpstan": "phpstan analyse -c phpstan-config.neon --memory-limit=4G"
+  "autoload": {
+    "psr-4": {
+      "QualityTools\\": "src/"
     }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "QualityTools\\Tests\\Codeception\\": "tests/Codeception",
+      "QualityTools\\Tests\\PhpUnit\\": "tests/PhpUnit"
+    }
+  },
+  "require-dev": {
+    "rector/rector": "@stable",
+    "phing/phing": "@stable",
+    "phpunit/phpunit": "@stable",
+    "mockery/mockery": "@stable",
+    "codeception/codeception": "@stable",
+    "phpspec/phpspec": "@stable",
+    "behat/behat": "@stable",
+    "squizlabs/php_codesniffer": "@stable",
+    "phpmd/phpmd": "@stable",
+    "friendsofphp/php-cs-fixer": "@stable",
+    "vimeo/psalm": "@stable",
+    "phpstan/phpstan": "@stable",
+    "codeception/module-phpbrowser": "^1.0.0",
+    "codeception/module-asserts": "^1.0.0",
+    "brianium/paratest": "@stable"
+  },
+  "scripts": {
+    "phpstan": "phpstan analyse -c phpstan-config.neon --memory-limit=4G"
+  }
 }
