@@ -11,7 +11,7 @@ $finder = PhpCsFixer\Finder::create()
 
 return (new PhpCsFixer\Config())
     ->setRules([
-        'array_syntax' => ['syntax' => 'short'],
+        'array_syntax' => ['syntax' => 'long'],
         'binary_operator_spaces' => ['operators' => ['|' => 'no_space']],
         'cast_spaces' => ['space' => 'none'],
         'class_definition' => ['single_line' => true],

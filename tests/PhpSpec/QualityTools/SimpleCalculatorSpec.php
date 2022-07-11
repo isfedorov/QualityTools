@@ -3,7 +3,6 @@
 namespace QualityTools;
 
 use PhpSpec\ObjectBehavior;
-use QualityTools\SimpleCalculator;
 
 class SimpleCalculatorSpec extends ObjectBehavior
 {

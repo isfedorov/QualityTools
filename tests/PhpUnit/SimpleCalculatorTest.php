@@ -3,7 +3,6 @@
 namespace QualityTools\Tests\PhpUnit;
 
 use QualityTools\SimpleCalculator;
-use PHPUnit\Framework\TestCase;
 
 class SimpleCalculatorTest extends BaseCalculatorTest
 {

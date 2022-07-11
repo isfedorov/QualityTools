@@ -1,9 +1,12 @@
 <?php
+declare(strict_types=1);
 
 namespace QualityTools;
 
 class SimpleCalculator
 {
+    public $prop = [];
+
     public function add($a, $b)
     {
         return $a + $b;
