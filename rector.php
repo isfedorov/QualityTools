@@ -1,6 +1,6 @@
 <?php
 
-use QualityTools\rules\MyFirstRector;
+use QualityTools\Rules\MyFirstRector;
 use Rector\Config\RectorConfig;
 use Rector\Core\ValueObject\PhpVersion;
 use Rector\Set\ValueObject\LevelSetList;

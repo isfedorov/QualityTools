@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace QualityTools\rules;
+namespace QualityTools\Rules;
 
 use PhpParser\Node;
 use PhpParser\Node\Identifier;

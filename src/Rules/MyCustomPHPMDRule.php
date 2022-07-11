@@ -1,8 +1,8 @@
 <?php
 
-namespace QualityTools\rules;
+namespace QualityTools\Rules;
 
-class Com_Example_Rule_NoFunctions extends \PHPMD\AbstractRule
+class MyCustomPHPMDRule extends \PHPMD\AbstractRule
 {
     public function apply(\PHPMD\AbstractNode $node)
     {
