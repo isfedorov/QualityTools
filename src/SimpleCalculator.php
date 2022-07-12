@@ -5,7 +5,7 @@ namespace QualityTools;
 
 class SimpleCalculator
 {
-    public $prop = [];
+    public $prop = array();
 
     public function add($a, $b)
     {
