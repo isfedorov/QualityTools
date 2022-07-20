@@ -1,13 +1,14 @@
 {
   "autoload": {
     "psr-4": {
-      "QualityTools\\": "src/"
+      "QualityTools\\": "src/",
+      "QualityTools\\Rules\\": "src/Rules/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "QualityTools\\Tests\\Codeception\\": "tests/Codeception",
-      "QualityTools\\Tests\\PhpUnit\\": "tests/PhpUnit"
+      "QualityTools\\Tests\\Codeception\\": "tests/Codeception/",
+      "QualityTools\\Tests\\PhpUnit\\": "tests/PhpUnit/"
     }
   },
   "require-dev": {
@@ -25,9 +26,16 @@
     "phpstan/phpstan": "@stable",
     "codeception/module-phpbrowser": "^1.0.0",
     "codeception/module-asserts": "^1.0.0",
-    "brianium/paratest": "@stable"
+    "brianium/paratest": "@stable",
+    "consolidation/robo": "@stable",
+    "symfony/var-dumper": "@stable"
   },
   "scripts": {
+    "phpcs": "vendor/bin/phpcs . --standard=phpcs.xml",
+    "php-cs-fixer-check": "php-cs-fixer fix . --config=.php-cs-fixer.php --dry-run",
+    "php-cs-fixer-fix": "php-cs-fixer fix . --config=.php-cs-fixer.php",
+    "phpmd": "phpmd . xml codesize,design,naming,controversial,unusedcode",
+    "psalm": "psalm -c psalm.xml --show-info=true --find-unused-code --find-unused-psalm-suppress src",
     "phpstan": "phpstan analyse -c phpstan-config.neon --memory-limit=4G"
   }
 }

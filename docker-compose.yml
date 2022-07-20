@@ -70,3 +70,16 @@ services:
       - .:/opt/project
     ports:
       - "9081:80"
+  php_82_run:
+    build: ./containers/8.2
+    volumes:
+      - .:/opt/project
+      - ./htdocs:/var/www/html
+    ports:
+      - "8082:80"
+  php_82_exec:
+    build: ./containers/8.2
+    volumes:
+      - .:/opt/project
+    ports:
+      - "9082:80"

@@ -4,8 +4,8 @@ declare(strict_types=1);
 namespace QualityTools\Rules;
 
 use PhpParser\Node;
-use PhpParser\Node\Identifier;
 use PhpParser\Node\Expr\MethodCall;
+use PhpParser\Node\Identifier;
 use Rector\Core\Rector\AbstractRector;
 use Symplify\RuleDocGenerator\ValueObject\CodeSample\CodeSample;
 use Symplify\RuleDocGenerator\ValueObject\RuleDefinition;
@@ -20,7 +20,7 @@ final class MyFirstRector extends AbstractRector
     {
         // what node types are we looking for?
         // pick any node from https://github.com/rectorphp/php-parser-nodes-docs/
-        return [MethodCall::class];
+        return array(MethodCall::class);
     }
 
     /**
@@ -50,14 +50,15 @@ final class MyFirstRector extends AbstractRector
     public function getRuleDefinition(): RuleDefinition
     {
         return new RuleDefinition(
-            'Change method calls from set* to change*.', [
+            'Change method calls from set* to change*.',
+            array(
                 new CodeSample(
                 // code before
                     '$user->setPassword("123456");',
                     // code after
                     '$user->changePassword("123456");'
                 ),
-            ]
+            )
         );
     }
 }
