@@ -83,3 +83,10 @@ services:
       - .:/opt/project
     ports:
       - "9082:80"
+  ssh:
+    build: ./containers/ssh
+    volumes:
+      - /Users/ivan.fedorov/Documents/Deployment/SFTP:/home/jetbrains
+      - ~/.ssh/id_rsa.pub:/home/jetbrains/.ssh/keys/id_rsa.pub:ro
+    ports:
+      - "3022:22"
