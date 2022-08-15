@@ -1,6 +1,6 @@
 <?php
 
-namespace QualityTools\Functions;
+namespace QualityTools\General\Functions;
 
 use function file_get_contents;
 

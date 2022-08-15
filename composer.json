@@ -1,14 +1,13 @@
 {
   "autoload": {
     "psr-4": {
-      "QualityTools\\": "src/",
-      "QualityTools\\Rules\\": "src/Rules/"
+      "QualityTools\\General\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "QualityTools\\Tests\\Codeception\\": "tests/Codeception/",
-      "QualityTools\\Tests\\PhpUnit\\": "tests/PhpUnit/"
+      "QualityTools\\General\\Tests\\Codeception\\": "tests/Codeception/",
+      "QualityTools\\General\\Tests\\PhpUnit\\": "tests/PhpUnit/"
     }
   },
   "require-dev": {
@@ -24,8 +23,8 @@
     "friendsofphp/php-cs-fixer": "@stable",
     "vimeo/psalm": "@stable",
     "phpstan/phpstan": "@stable",
-    "codeception/module-phpbrowser": "^1.0.0",
-    "codeception/module-asserts": "^1.0.0",
+    "codeception/module-phpbrowser": "@stable",
+    "codeception/module-asserts": "@stable",
     "brianium/paratest": "@stable",
     "consolidation/robo": "@stable",
     "symfony/var-dumper": "@stable"

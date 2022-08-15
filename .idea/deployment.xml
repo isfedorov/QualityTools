@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="sftp" remoteFilesAllowedToDisappearOnAutoupload="false">
+  <component name="PublishConfigData" serverName="sftp" remoteFilesAllowedToDisappearOnAutoupload="false" confirmBeforeUploading="false">
+    <option name="confirmBeforeUploading" value="false" />
     <serverData>
+      <paths name="linux">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/QualityToolsModuleFunctions" local="$PROJECT_DIR$/QualityToolsModuleFunctions" web="/" />
+            <mapping deploy="/QualityToolsModuleClasses" local="$PROJECT_DIR$/QualityToolsModuleClasses" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="sftp">
         <serverdata>
           <mappings>
             <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/QualityToolsModuleFunctions" local="$PROJECT_DIR$/QualityToolsModuleFunctions" web="/" />
+            <mapping deploy="/QualityToolsModuleClasses" local="$PROJECT_DIR$/QualityToolsModuleClasses" web="/" />
           </mappings>
         </serverdata>
       </paths>

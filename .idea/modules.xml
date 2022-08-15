@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/QualityTools.iml" filepath="$PROJECT_DIR$/.idea/QualityTools.iml" />
+      <module fileurl="file://$PROJECT_DIR$/QualityToolsModuleClasses/.idea/QualityToolsModuleClasses.iml" filepath="$PROJECT_DIR$/QualityToolsModuleClasses/.idea/QualityToolsModuleClasses.iml" />
+      <module fileurl="file://$PROJECT_DIR$/QualityToolsModuleFunctions/.idea/QualityToolsModuleFunctions.iml" filepath="$PROJECT_DIR$/QualityToolsModuleFunctions/.idea/QualityToolsModuleFunctions.iml" />
     </modules>
   </component>
 </project>

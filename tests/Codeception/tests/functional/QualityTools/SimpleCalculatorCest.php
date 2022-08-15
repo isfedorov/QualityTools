@@ -12,5 +12,11 @@ class SimpleCalculatorCest
     // tests
     public function tryToAdd(FunctionalTester $I)
     {
+        echo 1;
+    }
+
+    public function tryToRemove(FunctionalTester $I)
+    {
+        echo 1;
     }
 }

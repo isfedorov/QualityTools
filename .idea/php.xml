@@ -154,6 +154,137 @@
       <path value="$PROJECT_DIR$/vendor/sebastian/code-unit" />
       <path value="$PROJECT_DIR$/vendor/sebastian/type" />
       <path value="$PROJECT_DIR$/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/libs/vendor/composer" />
+      <path value="$PROJECT_DIR$/libs/vendor/felixfbecker/language-server-protocol" />
+      <path value="$PROJECT_DIR$/libs/vendor/felixfbecker/advanced-json-rpc" />
+      <path value="$PROJECT_DIR$/libs/vendor/brianium/paratest" />
+      <path value="$PROJECT_DIR$/libs/vendor/friendsofphp/php-cs-fixer" />
+      <path value="$PROJECT_DIR$/libs/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/libs/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/libs/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/libs/vendor/squizlabs/php_codesniffer" />
+      <path value="$PROJECT_DIR$/libs/vendor/amphp/byte-stream" />
+      <path value="$PROJECT_DIR$/libs/vendor/amphp/amp" />
+      <path value="$PROJECT_DIR$/libs/vendor/phing/phing" />
+      <path value="$PROJECT_DIR$/libs/vendor/php-cs-fixer/diff" />
+      <path value="$PROJECT_DIR$/libs/vendor/behat/gherkin" />
+      <path value="$PROJECT_DIR$/libs/vendor/behat/behat" />
+      <path value="$PROJECT_DIR$/libs/vendor/behat/transliterator" />
+      <path value="$PROJECT_DIR$/libs/vendor/phpmd/phpmd" />
+      <path value="$PROJECT_DIR$/libs/vendor/vimeo/psalm" />
+      <path value="$PROJECT_DIR$/libs/vendor/phpstan/phpstan" />
+      <path value="$PROJECT_DIR$/libs/vendor/grasmash/expander" />
+      <path value="$PROJECT_DIR$/libs/vendor/rector/rector" />
+      <path value="$PROJECT_DIR$/libs/vendor/dnoegel/php-xdg-base-dir" />
+      <path value="$PROJECT_DIR$/libs/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/libs/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/libs/vendor/webmozart/path-util" />
+      <path value="$PROJECT_DIR$/libs/vendor/phpspec/php-diff" />
+      <path value="$PROJECT_DIR$/libs/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/libs/vendor/codeception/stub" />
+      <path value="$PROJECT_DIR$/libs/vendor/phpspec/phpspec" />
+      <path value="$PROJECT_DIR$/libs/vendor/dflydev/dot-access-data" />
+      <path value="$PROJECT_DIR$/libs/vendor/codeception/codeception" />
+      <path value="$PROJECT_DIR$/libs/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/libs/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/libs/vendor/codeception/lib-asserts" />
+      <path value="$PROJECT_DIR$/libs/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/libs/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/libs/vendor/consolidation/robo" />
+      <path value="$PROJECT_DIR$/libs/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/libs/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/libs/vendor/consolidation/annotated-command" />
+      <path value="$PROJECT_DIR$/libs/vendor/consolidation/output-formatters" />
+      <path value="$PROJECT_DIR$/libs/vendor/consolidation/self-update" />
+      <path value="$PROJECT_DIR$/libs/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/libs/vendor/consolidation/log" />
+      <path value="$PROJECT_DIR$/libs/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/libs/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/libs/vendor/league/container" />
+      <path value="$PROJECT_DIR$/libs/vendor/consolidation/config" />
+      <path value="$PROJECT_DIR$/libs/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/libs/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/libs/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/libs/vendor/pdepend/pdepend" />
+      <path value="$PROJECT_DIR$/libs/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/libs/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/libs/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/libs/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/libs/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/libs/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/libs/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/libs/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/libs/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/libs/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/libs/vendor/openlss/lib-array2xml" />
+      <path value="$PROJECT_DIR$/libs/vendor/netresearch/jsonmapper" />
+      <path value="$PROJECT_DIR$/libs/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/libs/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/libs/vendor/symfony/dependency-injection" />
+      <path value="$PROJECT_DIR$/libs/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/libs/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/libs/vendor/symfony/stopwatch" />
+      <path value="$PROJECT_DIR$/libs/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/libs/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/libs/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/libs/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/libs/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/libs/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/libs/vendor/symfony/options-resolver" />
+      <path value="$PROJECT_DIR$/libs/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/libs/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/libs/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/libs/vendor/symfony/config" />
+      <path value="$PROJECT_DIR$/libs/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/libs/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/libs/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/libs/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/libs/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/libs/vendor/symfony/polyfill-php81" />
+      <path value="$PROJECT_DIR$/libs/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/libs/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/libs/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/libs/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/libs/vendor/jean85/pretty-package-versions" />
+      <path value="$PROJECT_DIR$/libs/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/libs/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/libs/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/libs/vendor/sebastian/code-unit" />
+      <path value="$PROJECT_DIR$/libs/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/libs/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/libs/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/libs/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/libs/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/libs/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/libs/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/libs/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/libs/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/libs/vendor/symfony/browser-kit" />
+      <path value="$PROJECT_DIR$/libs/vendor/symfony/dom-crawler" />
+      <path value="$PROJECT_DIR$/libs/vendor/codeception/lib-innerbrowser" />
+      <path value="$PROJECT_DIR$/libs/vendor/codeception/module-asserts" />
+      <path value="$PROJECT_DIR$/libs/vendor/codeception/module-phpbrowser" />
+      <path value="$PROJECT_DIR$/libs/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/libs/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/libs/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/libs/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/libs/vendor/symfony/polyfill-php73" />
+      <path value="$PROJECT_DIR$/libs/vendor/codeception/phpunit-wrapper" />
+      <path value="$PROJECT_DIR$/libs/vendor/codeception/lib-web" />
+      <path value="$PROJECT_DIR$/libs/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/vendor/grasmash/expander" />
+      <path value="$PROJECT_DIR$/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/vendor/codeception/lib-web" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/vendor/masterminds/html5" />
+      <path value="$PROJECT_DIR$/vendor/consolidation/config" />
+      <path value="$PROJECT_DIR$/vendor/consolidation/self-update" />
+      <path value="$PROJECT_DIR$/vendor/consolidation/log" />
+      <path value="$PROJECT_DIR$/vendor/consolidation/robo" />
+      <path value="$PROJECT_DIR$/vendor/consolidation/annotated-command" />
+      <path value="$PROJECT_DIR$/vendor/consolidation/output-formatters" />
+      <path value="$PROJECT_DIR$/vendor/league/container" />
+      <path value="$PROJECT_DIR$/vendor/dflydev/dot-access-data" />
     </include_path>
   </component>
   <component name="PhpInterpreters">
@@ -255,56 +386,6 @@
   </component>
   <component name="PhpInterpretersPhpInfoCache">
     <phpInfoCache>
-      <interpreter name="php_71_run">
-        <phpinfo binary_type="PHP" php_cli="/usr/local/bin/php" path_separator=":" version="7.1.33">
-          <additional_php_ini>/usr/local/etc/php/conf.d/docker-php-ext-mysqli.ini, /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini, /usr/local/etc/php/conf.d/docker-php-memlimit.ini</additional_php_ini>
-          <configuration_file>/usr/local/etc/php/php.ini</configuration_file>
-          <configuration_options>
-            <configuration_option name="include_path" value=".:/usr/local/lib/php" />
-          </configuration_options>
-          <debuggers>
-            <debugger_info debugger="xdebug" debugger_version="2.9.0">
-              <debug_extensions />
-            </debugger_info>
-          </debuggers>
-          <loaded_extensions>
-            <extension name="Core" />
-            <extension name="PDO" />
-            <extension name="Phar" />
-            <extension name="Reflection" />
-            <extension name="SPL" />
-            <extension name="SimpleXML" />
-            <extension name="ctype" />
-            <extension name="curl" />
-            <extension name="date" />
-            <extension name="dom" />
-            <extension name="fileinfo" />
-            <extension name="filter" />
-            <extension name="ftp" />
-            <extension name="hash" />
-            <extension name="iconv" />
-            <extension name="json" />
-            <extension name="libxml" />
-            <extension name="mbstring" />
-            <extension name="mysqli" />
-            <extension name="mysqlnd" />
-            <extension name="openssl" />
-            <extension name="pcre" />
-            <extension name="pdo_sqlite" />
-            <extension name="posix" />
-            <extension name="readline" />
-            <extension name="session" />
-            <extension name="sqlite3" />
-            <extension name="standard" />
-            <extension name="tokenizer" />
-            <extension name="xdebug" />
-            <extension name="xml" />
-            <extension name="xmlreader" />
-            <extension name="xmlwriter" />
-            <extension name="zlib" />
-          </loaded_extensions>
-        </phpinfo>
-      </interpreter>
       <interpreter name="php_80_exec">
         <phpinfo binary_type="PHP" php_cli="/usr/local/bin/php" path_separator=":" version="8.0.21">
           <additional_php_ini>/usr/local/etc/php/conf.d/docker-php-ext-intl.ini, /usr/local/etc/php/conf.d/docker-php-ext-mysqli.ini, /usr/local/etc/php/conf.d/docker-php-ext-sodium.ini, /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini, /usr/local/etc/php/conf.d/docker-php-memlimit.ini</additional_php_ini>
@@ -357,163 +438,8 @@
           </loaded_extensions>
         </phpinfo>
       </interpreter>
-      <interpreter name="php_56_exec">
-        <phpinfo binary_type="PHP" php_cli="/usr/local/bin/php" path_separator=":" version="5.6.40">
-          <additional_php_ini>/usr/local/etc/php/conf.d/docker-php-ext-mysqli.ini, /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini, /usr/local/etc/php/conf.d/docker-php-memlimit.ini</additional_php_ini>
-          <configuration_file>/usr/local/etc/php/php.ini</configuration_file>
-          <configuration_options>
-            <configuration_option name="include_path" value=".:/usr/local/lib/php" />
-          </configuration_options>
-          <debuggers>
-            <debugger_info debugger="xdebug" debugger_version="2.5.0">
-              <debug_extensions />
-            </debugger_info>
-          </debuggers>
-          <loaded_extensions>
-            <extension name="Core" />
-            <extension name="PDO" />
-            <extension name="Phar" />
-            <extension name="Reflection" />
-            <extension name="SPL" />
-            <extension name="SimpleXML" />
-            <extension name="ctype" />
-            <extension name="curl" />
-            <extension name="date" />
-            <extension name="dom" />
-            <extension name="ereg" />
-            <extension name="fileinfo" />
-            <extension name="filter" />
-            <extension name="ftp" />
-            <extension name="hash" />
-            <extension name="iconv" />
-            <extension name="json" />
-            <extension name="libxml" />
-            <extension name="mbstring" />
-            <extension name="mhash" />
-            <extension name="mysqli" />
-            <extension name="mysqlnd" />
-            <extension name="openssl" />
-            <extension name="pcre" />
-            <extension name="pdo_sqlite" />
-            <extension name="posix" />
-            <extension name="readline" />
-            <extension name="session" />
-            <extension name="sqlite3" />
-            <extension name="standard" />
-            <extension name="tokenizer" />
-            <extension name="xdebug" />
-            <extension name="xml" />
-            <extension name="xmlreader" />
-            <extension name="xmlwriter" />
-            <extension name="zlib" />
-          </loaded_extensions>
-        </phpinfo>
-      </interpreter>
-      <interpreter name="php_74_run">
-        <phpinfo binary_type="PHP" php_cli="/usr/local/bin/php" path_separator=":" version="7.4.30">
-          <additional_php_ini>/usr/local/etc/php/conf.d/docker-php-ext-mysqli.ini, /usr/local/etc/php/conf.d/docker-php-ext-sodium.ini, /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini, /usr/local/etc/php/conf.d/docker-php-memlimit.ini</additional_php_ini>
-          <configuration_file>/usr/local/etc/php/php.ini</configuration_file>
-          <configuration_options>
-            <configuration_option name="include_path" value=".:/usr/local/lib/php" />
-          </configuration_options>
-          <debuggers>
-            <debugger_info debugger="xdebug" debugger_version="3.0.3">
-              <debug_extensions />
-            </debugger_info>
-          </debuggers>
-          <loaded_extensions>
-            <extension name="Core" />
-            <extension name="PDO" />
-            <extension name="Phar" />
-            <extension name="Reflection" />
-            <extension name="SPL" />
-            <extension name="SimpleXML" />
-            <extension name="ctype" />
-            <extension name="curl" />
-            <extension name="date" />
-            <extension name="dom" />
-            <extension name="fileinfo" />
-            <extension name="filter" />
-            <extension name="ftp" />
-            <extension name="hash" />
-            <extension name="iconv" />
-            <extension name="json" />
-            <extension name="libxml" />
-            <extension name="mbstring" />
-            <extension name="mysqli" />
-            <extension name="mysqlnd" />
-            <extension name="openssl" />
-            <extension name="pcre" />
-            <extension name="pdo_sqlite" />
-            <extension name="posix" />
-            <extension name="readline" />
-            <extension name="session" />
-            <extension name="sodium" />
-            <extension name="sqlite3" />
-            <extension name="standard" />
-            <extension name="tokenizer" />
-            <extension name="xdebug" />
-            <extension name="xml" />
-            <extension name="xmlreader" />
-            <extension name="xmlwriter" />
-            <extension name="zlib" />
-          </loaded_extensions>
-        </phpinfo>
-      </interpreter>
       <interpreter name="php_80_run">
         <phpinfo binary_type="PHP" php_cli="/usr/local/bin/php" path_separator=":" version="8.0.20">
-          <additional_php_ini>/usr/local/etc/php/conf.d/docker-php-ext-intl.ini, /usr/local/etc/php/conf.d/docker-php-ext-mysqli.ini, /usr/local/etc/php/conf.d/docker-php-ext-sodium.ini, /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini, /usr/local/etc/php/conf.d/docker-php-memlimit.ini</additional_php_ini>
-          <configuration_file>/usr/local/etc/php/php.ini</configuration_file>
-          <configuration_options>
-            <configuration_option name="include_path" value=".:/usr/local/lib/php" />
-          </configuration_options>
-          <debuggers>
-            <debugger_info debugger="xdebug" debugger_version="3.1.5">
-              <debug_extensions />
-            </debugger_info>
-          </debuggers>
-          <loaded_extensions>
-            <extension name="Core" />
-            <extension name="PDO" />
-            <extension name="Phar" />
-            <extension name="Reflection" />
-            <extension name="SPL" />
-            <extension name="SimpleXML" />
-            <extension name="ctype" />
-            <extension name="curl" />
-            <extension name="date" />
-            <extension name="dom" />
-            <extension name="fileinfo" />
-            <extension name="filter" />
-            <extension name="ftp" />
-            <extension name="hash" />
-            <extension name="iconv" />
-            <extension name="intl" />
-            <extension name="json" />
-            <extension name="libxml" />
-            <extension name="mbstring" />
-            <extension name="mysqli" />
-            <extension name="mysqlnd" />
-            <extension name="openssl" />
-            <extension name="pcre" />
-            <extension name="pdo_sqlite" />
-            <extension name="posix" />
-            <extension name="readline" />
-            <extension name="session" />
-            <extension name="sodium" />
-            <extension name="sqlite3" />
-            <extension name="standard" />
-            <extension name="tokenizer" />
-            <extension name="xdebug" />
-            <extension name="xml" />
-            <extension name="xmlreader" />
-            <extension name="xmlwriter" />
-            <extension name="zlib" />
-          </loaded_extensions>
-        </phpinfo>
-      </interpreter>
-      <interpreter name="php_81_exec">
-        <phpinfo binary_type="PHP" php_cli="/usr/local/bin/php" path_separator=":" version="8.1.8">
           <additional_php_ini>/usr/local/etc/php/conf.d/docker-php-ext-intl.ini, /usr/local/etc/php/conf.d/docker-php-ext-mysqli.ini, /usr/local/etc/php/conf.d/docker-php-ext-sodium.ini, /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini, /usr/local/etc/php/conf.d/docker-php-memlimit.ini</additional_php_ini>
           <configuration_file>/usr/local/etc/php/php.ini</configuration_file>
           <configuration_options>
@@ -666,51 +592,6 @@
           </loaded_extensions>
         </phpinfo>
       </interpreter>
-      <interpreter name="php:latest">
-        <phpinfo binary_type="PHP" php_cgi="/usr/local/bin/php-cgi" php_cli="/usr/local/bin/php" path_separator=":" version="8.1.8">
-          <additional_php_ini>/usr/local/etc/php/conf.d/docker-php-ext-sodium.ini</additional_php_ini>
-          <configuration_file />
-          <configuration_options>
-            <configuration_option name="include_path" value=".:/usr/local/lib/php" />
-          </configuration_options>
-          <debuggers />
-          <loaded_extensions>
-            <extension name="Core" />
-            <extension name="PDO" />
-            <extension name="Phar" />
-            <extension name="Reflection" />
-            <extension name="SPL" />
-            <extension name="SimpleXML" />
-            <extension name="ctype" />
-            <extension name="curl" />
-            <extension name="date" />
-            <extension name="dom" />
-            <extension name="fileinfo" />
-            <extension name="filter" />
-            <extension name="ftp" />
-            <extension name="hash" />
-            <extension name="iconv" />
-            <extension name="json" />
-            <extension name="libxml" />
-            <extension name="mbstring" />
-            <extension name="mysqlnd" />
-            <extension name="openssl" />
-            <extension name="pcre" />
-            <extension name="pdo_sqlite" />
-            <extension name="posix" />
-            <extension name="readline" />
-            <extension name="session" />
-            <extension name="sodium" />
-            <extension name="sqlite3" />
-            <extension name="standard" />
-            <extension name="tokenizer" />
-            <extension name="xml" />
-            <extension name="xmlreader" />
-            <extension name="xmlwriter" />
-            <extension name="zlib" />
-          </loaded_extensions>
-        </phpinfo>
-      </interpreter>
       <interpreter name="php_74_exec">
         <phpinfo binary_type="PHP" php_cli="/usr/local/bin/php" path_separator=":" version="7.4.30">
           <additional_php_ini>/usr/local/etc/php/conf.d/docker-php-ext-mysqli.ini, /usr/local/etc/php/conf.d/docker-php-ext-sodium.ini, /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini, /usr/local/etc/php/conf.d/docker-php-memlimit.ini</additional_php_ini>
@@ -755,6 +636,256 @@
             <extension name="standard" />
             <extension name="tokenizer" />
             <extension name="xdebug" />
+            <extension name="xml" />
+            <extension name="xmlreader" />
+            <extension name="xmlwriter" />
+            <extension name="zlib" />
+          </loaded_extensions>
+        </phpinfo>
+      </interpreter>
+      <interpreter name="php_71_run">
+        <phpinfo binary_type="PHP" php_cli="/usr/local/bin/php" path_separator=":" version="7.1.33">
+          <additional_php_ini>/usr/local/etc/php/conf.d/docker-php-ext-mysqli.ini, /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini, /usr/local/etc/php/conf.d/docker-php-memlimit.ini</additional_php_ini>
+          <configuration_file>/usr/local/etc/php/php.ini</configuration_file>
+          <configuration_options>
+            <configuration_option name="include_path" value=".:/usr/local/lib/php" />
+          </configuration_options>
+          <debuggers>
+            <debugger_info debugger="xdebug" debugger_version="2.9.0">
+              <debug_extensions />
+            </debugger_info>
+          </debuggers>
+          <loaded_extensions>
+            <extension name="Core" />
+            <extension name="PDO" />
+            <extension name="Phar" />
+            <extension name="Reflection" />
+            <extension name="SPL" />
+            <extension name="SimpleXML" />
+            <extension name="ctype" />
+            <extension name="curl" />
+            <extension name="date" />
+            <extension name="dom" />
+            <extension name="fileinfo" />
+            <extension name="filter" />
+            <extension name="ftp" />
+            <extension name="hash" />
+            <extension name="iconv" />
+            <extension name="json" />
+            <extension name="libxml" />
+            <extension name="mbstring" />
+            <extension name="mysqli" />
+            <extension name="mysqlnd" />
+            <extension name="openssl" />
+            <extension name="pcre" />
+            <extension name="pdo_sqlite" />
+            <extension name="posix" />
+            <extension name="readline" />
+            <extension name="session" />
+            <extension name="sqlite3" />
+            <extension name="standard" />
+            <extension name="tokenizer" />
+            <extension name="xdebug" />
+            <extension name="xml" />
+            <extension name="xmlreader" />
+            <extension name="xmlwriter" />
+            <extension name="zlib" />
+          </loaded_extensions>
+        </phpinfo>
+      </interpreter>
+      <interpreter name="php_56_exec">
+        <phpinfo binary_type="PHP" php_cli="/usr/local/bin/php" path_separator=":" version="5.6.40">
+          <additional_php_ini>/usr/local/etc/php/conf.d/docker-php-ext-mysqli.ini, /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini, /usr/local/etc/php/conf.d/docker-php-memlimit.ini</additional_php_ini>
+          <configuration_file>/usr/local/etc/php/php.ini</configuration_file>
+          <configuration_options>
+            <configuration_option name="include_path" value=".:/usr/local/lib/php" />
+          </configuration_options>
+          <debuggers>
+            <debugger_info debugger="xdebug" debugger_version="2.5.0">
+              <debug_extensions />
+            </debugger_info>
+          </debuggers>
+          <loaded_extensions>
+            <extension name="Core" />
+            <extension name="PDO" />
+            <extension name="Phar" />
+            <extension name="Reflection" />
+            <extension name="SPL" />
+            <extension name="SimpleXML" />
+            <extension name="ctype" />
+            <extension name="curl" />
+            <extension name="date" />
+            <extension name="dom" />
+            <extension name="ereg" />
+            <extension name="fileinfo" />
+            <extension name="filter" />
+            <extension name="ftp" />
+            <extension name="hash" />
+            <extension name="iconv" />
+            <extension name="json" />
+            <extension name="libxml" />
+            <extension name="mbstring" />
+            <extension name="mhash" />
+            <extension name="mysqli" />
+            <extension name="mysqlnd" />
+            <extension name="openssl" />
+            <extension name="pcre" />
+            <extension name="pdo_sqlite" />
+            <extension name="posix" />
+            <extension name="readline" />
+            <extension name="session" />
+            <extension name="sqlite3" />
+            <extension name="standard" />
+            <extension name="tokenizer" />
+            <extension name="xdebug" />
+            <extension name="xml" />
+            <extension name="xmlreader" />
+            <extension name="xmlwriter" />
+            <extension name="zlib" />
+          </loaded_extensions>
+        </phpinfo>
+      </interpreter>
+      <interpreter name="php_74_run">
+        <phpinfo binary_type="PHP" php_cli="/usr/local/bin/php" path_separator=":" version="7.4.30">
+          <additional_php_ini>/usr/local/etc/php/conf.d/docker-php-ext-mysqli.ini, /usr/local/etc/php/conf.d/docker-php-ext-sodium.ini, /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini, /usr/local/etc/php/conf.d/docker-php-memlimit.ini</additional_php_ini>
+          <configuration_file>/usr/local/etc/php/php.ini</configuration_file>
+          <configuration_options>
+            <configuration_option name="include_path" value=".:/usr/local/lib/php" />
+          </configuration_options>
+          <debuggers>
+            <debugger_info debugger="xdebug" debugger_version="3.0.3">
+              <debug_extensions />
+            </debugger_info>
+          </debuggers>
+          <loaded_extensions>
+            <extension name="Core" />
+            <extension name="PDO" />
+            <extension name="Phar" />
+            <extension name="Reflection" />
+            <extension name="SPL" />
+            <extension name="SimpleXML" />
+            <extension name="ctype" />
+            <extension name="curl" />
+            <extension name="date" />
+            <extension name="dom" />
+            <extension name="fileinfo" />
+            <extension name="filter" />
+            <extension name="ftp" />
+            <extension name="hash" />
+            <extension name="iconv" />
+            <extension name="json" />
+            <extension name="libxml" />
+            <extension name="mbstring" />
+            <extension name="mysqli" />
+            <extension name="mysqlnd" />
+            <extension name="openssl" />
+            <extension name="pcre" />
+            <extension name="pdo_sqlite" />
+            <extension name="posix" />
+            <extension name="readline" />
+            <extension name="session" />
+            <extension name="sodium" />
+            <extension name="sqlite3" />
+            <extension name="standard" />
+            <extension name="tokenizer" />
+            <extension name="xdebug" />
+            <extension name="xml" />
+            <extension name="xmlreader" />
+            <extension name="xmlwriter" />
+            <extension name="zlib" />
+          </loaded_extensions>
+        </phpinfo>
+      </interpreter>
+      <interpreter name="php_81_exec">
+        <phpinfo binary_type="PHP" php_cli="/usr/local/bin/php" path_separator=":" version="8.1.8">
+          <additional_php_ini>/usr/local/etc/php/conf.d/docker-php-ext-intl.ini, /usr/local/etc/php/conf.d/docker-php-ext-mysqli.ini, /usr/local/etc/php/conf.d/docker-php-ext-sodium.ini, /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini, /usr/local/etc/php/conf.d/docker-php-memlimit.ini</additional_php_ini>
+          <configuration_file>/usr/local/etc/php/php.ini</configuration_file>
+          <configuration_options>
+            <configuration_option name="include_path" value=".:/usr/local/lib/php" />
+          </configuration_options>
+          <debuggers>
+            <debugger_info debugger="xdebug" debugger_version="3.1.5">
+              <debug_extensions />
+            </debugger_info>
+          </debuggers>
+          <loaded_extensions>
+            <extension name="Core" />
+            <extension name="PDO" />
+            <extension name="Phar" />
+            <extension name="Reflection" />
+            <extension name="SPL" />
+            <extension name="SimpleXML" />
+            <extension name="ctype" />
+            <extension name="curl" />
+            <extension name="date" />
+            <extension name="dom" />
+            <extension name="fileinfo" />
+            <extension name="filter" />
+            <extension name="ftp" />
+            <extension name="hash" />
+            <extension name="iconv" />
+            <extension name="intl" />
+            <extension name="json" />
+            <extension name="libxml" />
+            <extension name="mbstring" />
+            <extension name="mysqli" />
+            <extension name="mysqlnd" />
+            <extension name="openssl" />
+            <extension name="pcre" />
+            <extension name="pdo_sqlite" />
+            <extension name="posix" />
+            <extension name="readline" />
+            <extension name="session" />
+            <extension name="sodium" />
+            <extension name="sqlite3" />
+            <extension name="standard" />
+            <extension name="tokenizer" />
+            <extension name="xdebug" />
+            <extension name="xml" />
+            <extension name="xmlreader" />
+            <extension name="xmlwriter" />
+            <extension name="zlib" />
+          </loaded_extensions>
+        </phpinfo>
+      </interpreter>
+      <interpreter name="php:latest">
+        <phpinfo binary_type="PHP" php_cgi="/usr/local/bin/php-cgi" php_cli="/usr/local/bin/php" path_separator=":" version="8.1.8">
+          <additional_php_ini>/usr/local/etc/php/conf.d/docker-php-ext-sodium.ini</additional_php_ini>
+          <configuration_file />
+          <configuration_options>
+            <configuration_option name="include_path" value=".:/usr/local/lib/php" />
+          </configuration_options>
+          <debuggers />
+          <loaded_extensions>
+            <extension name="Core" />
+            <extension name="PDO" />
+            <extension name="Phar" />
+            <extension name="Reflection" />
+            <extension name="SPL" />
+            <extension name="SimpleXML" />
+            <extension name="ctype" />
+            <extension name="curl" />
+            <extension name="date" />
+            <extension name="dom" />
+            <extension name="fileinfo" />
+            <extension name="filter" />
+            <extension name="ftp" />
+            <extension name="hash" />
+            <extension name="iconv" />
+            <extension name="json" />
+            <extension name="libxml" />
+            <extension name="mbstring" />
+            <extension name="mysqlnd" />
+            <extension name="openssl" />
+            <extension name="pcre" />
+            <extension name="pdo_sqlite" />
+            <extension name="posix" />
+            <extension name="readline" />
+            <extension name="session" />
+            <extension name="sodium" />
+            <extension name="sqlite3" />
+            <extension name="standard" />
+            <extension name="tokenizer" />
             <extension name="xml" />
             <extension name="xmlreader" />
             <extension name="xmlwriter" />

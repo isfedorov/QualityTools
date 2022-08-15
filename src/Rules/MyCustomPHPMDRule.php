@@ -1,6 +1,6 @@
 <?php
 
-namespace QualityTools\Rules;
+namespace QualityTools\General\Rules;
 
 class MyCustomPHPMDRule extends \PHPMD\AbstractRule
 {

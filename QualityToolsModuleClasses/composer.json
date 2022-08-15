@@ -1,0 +1,40 @@
+{
+  "autoload": {
+    "psr-4": {
+      "QualityTools\\Classes\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "QualityTools\\Classes\\Tests\\Codeception\\": "tests/Codeception/",
+      "QualityTools\\Classes\\Tests\\PhpUnit\\": "tests/PhpUnit/"
+    }
+  },
+  "require-dev": {
+    "rector/rector": "@stable",
+    "phing/phing": "@stable",
+    "phpunit/phpunit": "@stable",
+    "mockery/mockery": "@stable",
+    "codeception/codeception": "@stable",
+    "phpspec/phpspec": "@stable",
+    "behat/behat": "@stable",
+    "squizlabs/php_codesniffer": "@stable",
+    "phpmd/phpmd": "@stable",
+    "friendsofphp/php-cs-fixer": "@stable",
+    "vimeo/psalm": "@stable",
+    "phpstan/phpstan": "@stable",
+    "codeception/module-phpbrowser": "@stable",
+    "codeception/module-asserts": "@stable",
+    "brianium/paratest": "@stable",
+    "consolidation/robo": "@stable",
+    "symfony/var-dumper": "@stable"
+  },
+  "scripts": {
+    "phpcs": "vendor/bin/phpcs src tests --standard=phpcs.xml",
+    "php-cs-fixer-check": "php-cs-fixer fix src tests --config=.php-cs-fixer.php --dry-run",
+    "php-cs-fixer-fix": "php-cs-fixer fix src tests --config=.php-cs-fixer.php",
+    "phpmd": "phpmd src xml codesize,design,naming,controversial,unusedcode",
+    "psalm": "psalm -c psalm.xml --show-info=true --find-unused-code --find-unused-psalm-suppress src tests",
+    "phpstan": "phpstan analyse -c phpstan-config.neon --memory-limit=4G"
+  }
+}

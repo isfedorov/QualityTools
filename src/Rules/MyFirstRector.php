@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace QualityTools\Rules;
+namespace QualityTools\General\Rules;
 
 use PhpParser\Node;
 use PhpParser\Node\Expr\MethodCall;
@@ -51,14 +51,12 @@ final class MyFirstRector extends AbstractRector
     {
         return new RuleDefinition(
             'Change method calls from set* to change*.',
-            array(
-                new CodeSample(
-                // code before
-                    '$user->setPassword("123456");',
-                    // code after
-                    '$user->changePassword("123456");'
-                ),
-            )
+            [new CodeSample(
+            // code before
+                '$user->setPassword("123456");',
+                // code after
+                '$user->changePassword("123456");'
+            )]
         );
     }
 }

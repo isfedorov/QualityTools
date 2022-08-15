@@ -5,7 +5,14 @@
       <webServer id="5bc2f4ae-fe13-4d6e-a995-fa33dae560f5" name="sftp">
         <fileTransfer rootFolder="/home/jetbrains" accessType="SFTP" host="localhost" port="3022" sshConfigId="45b5d26e-065e-4e8e-9970-8d573d4ea3cb" sshConfig="jetbrains@localhost:3022 password">
           <advancedOptions>
-            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" isUseRsync="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="c2c290d4-75ff-414d-8671-5abd80e93b86" name="linux">
+        <fileTransfer rootFolder="/home/ifedorov/PhpstormProjects/QualityTools" accessType="SFTP" host="192.168.178.241" port="22" sshConfigId="bde2048d-ef5a-4343-8d85-884beb20cb5c" sshConfig="ifedorov@192.168.178.241:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" isUseRsync="true" />
           </advancedOptions>
         </fileTransfer>
       </webServer>

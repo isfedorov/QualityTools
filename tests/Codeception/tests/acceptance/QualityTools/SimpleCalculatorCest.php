@@ -13,4 +13,9 @@ class SimpleCalculatorCest
     public function tryToAdd(AcceptanceTester $I)
     {
     }
+
+    // tests
+    public function tryToRemove(AcceptanceTester $I)
+    {
+    }
 }

@@ -1,11 +1,16 @@
 <?php
 declare(strict_types=1);
 
-namespace QualityTools;
+namespace QualityTools\General;
 
 class SimpleCalculator
 {
-    public $prop = array();
+    public array $prop;
+
+    public function __construct()
+    {
+        $this->prop = array();
+    }
 
     public function add($a, $b)
     {
