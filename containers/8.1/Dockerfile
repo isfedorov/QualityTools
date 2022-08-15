@@ -1,8 +1,8 @@
 FROM php:8.1-apache
 RUN echo 'memory_limit = 2048M' >> /usr/local/etc/php/conf.d/docker-php-memlimit.ini
 COPY --from=composer /usr/bin/composer /usr/bin/composer
-RUN apt-get update && apt-get -y install git zip unzip apache2 apache2-utils ssl-cert libicu-dev
-RUN docker-php-ext-install mysqli intl
+RUN apt-get update && apt-get -y install git zip unzip apache2 apache2-utils ssl-cert libicu-dev php-intl
+RUN docker-php-ext-install mysqli
 RUN pecl install xdebug
 RUN docker-php-ext-enable xdebug
 RUN echo "xdebug.mode=develop,debug,coverage" >> /usr/local/etc/php/php.ini

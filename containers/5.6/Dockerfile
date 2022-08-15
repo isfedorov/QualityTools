@@ -14,6 +14,7 @@ RUN echo "xdebug.default_enable=1" >> /usr/local/etc/php/php.ini
 RUN echo "xdebug.coverage_enable=1" >> /usr/local/etc/php/php.ini
 RUN echo "xdebug.output_dir=/opt/project/xdebug_snapshots" >> /usr/local/etc/php/php.ini
 RUN echo "xdebug.log=/opt/project/xdebug_logs/xdebug25php56.log" >> /usr/local/etc/php/php.ini
+RUN echo "xdebug.remote_log=/opt/project/xdebug_logs/xdebug25php56.log" >> /usr/local/etc/php/php.ini
 EXPOSE 80
 EXPOSE 443
 WORKDIR /var/www/html

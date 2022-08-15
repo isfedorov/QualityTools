@@ -6,28 +6,43 @@ services:
       - .:/opt/project
       - ./htdocs:/var/www/html
     ports:
-      - "2080:80"
+      - "1080:80"
   php_56_exec:
     build: ./containers/5.6
     volumes:
       - .:/opt/project
       - ./htdocs:/var/www/html
     ports:
-      - "3080:80"
+      - "2080:80"
   php_71_run:
     build: ./containers/7.1
     volumes:
       - .:/opt/project
       - ./htdocs:/var/www/html
     ports:
-      - "4080:80"
+      - "3080:80"
   php_71_exec:
     build: ./containers/7.1
     volumes:
       - .:/opt/project
       - ./htdocs:/var/www/html
     ports:
+      - "4080:80"
+    command: bash -c "tail -f /dev/null"
+  php_72_run:
+    build: ./containers/7.1
+    volumes:
+      - .:/opt/project
+      - ./htdocs:/var/www/html
+    ports:
       - "5080:80"
+  php_72_exec:
+    build: ./containers/7.2
+    volumes:
+      - .:/opt/project
+      - ./htdocs:/var/www/html
+    ports:
+      - "5180:80"
     command: bash -c "tail -f /dev/null"
   php_74_run:
     build: ./containers/7.4
@@ -87,6 +102,7 @@ services:
     build: ./containers/ssh
     volumes:
       - /Users/ivan.fedorov/Documents/Deployment/SFTP:/home/jetbrains
+      - .:/home/jetbrains
       - ~/.ssh/id_rsa.pub:/home/jetbrains/.ssh/keys/id_rsa.pub:ro
     ports:
       - "3022:22"
