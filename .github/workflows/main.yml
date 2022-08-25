@@ -1,9 +1,5 @@
-on:
-  pull_request:
-    branches:
-      - main
-    types: ["closed"]
-
+name: Picks to branches
+on: [push, pull_request, workflow_dispatch]
 jobs:
   cherry_pick_5_6:
     runs-on: ubuntu-latest
