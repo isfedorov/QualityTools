@@ -1,5 +1,7 @@
 name: Picks to branches
-on: [push, workflow_dispatch]
+on:
+  pull_request:
+    types: [closed]
 jobs:
   cherry_pick_5_6:
     runs-on: ubuntu-latest
