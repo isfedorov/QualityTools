@@ -1,6 +1,6 @@
 <?php
 
-namespace QualityTools\Tests\PhpUnit;
+namespace QualityTools\General\General\Tests\PhpUnit;
 
 use PHPUnit\Framework\TestCase;
 
