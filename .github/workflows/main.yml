@@ -21,16 +21,16 @@ jobs:
   cherry_pick_7_0:
     runs-on: ubuntu-latest
     name: Cherry pick into 7.1
-    if: contains(github.event.pull_request.labels.*.name, '7.0')
+    if: contains(github.event.pull_request.labels.*.name, '7.1')
     steps:
       - name: Checkout
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
-      - name: Cherry pick into 7.0
+      - name: Cherry pick into 7.1
         uses: carloscastrojumo/github-cherry-pick-action@v1.0.1
         with:
-          branch: 7.0
+          branch: 7.1
           labels: |
             cherry-pick
           reviewers: |
