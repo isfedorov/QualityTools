@@ -1,5 +1,5 @@
 name: Picks to branches
-on: [pull_request, workflow_dispatch]
+on: [push, workflow_dispatch]
 jobs:
   cherry_pick_5_6:
     runs-on: ubuntu-latest
@@ -20,7 +20,7 @@ jobs:
             aReviewerUser
   cherry_pick_7_0:
     runs-on: ubuntu-latest
-    name: Cherry pick into 7.0
+    name: Cherry pick into 7.1
     if: contains(github.event.pull_request.labels.*.name, '7.0')
     steps:
       - name: Checkout
