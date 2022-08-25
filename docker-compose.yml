@@ -13,7 +13,22 @@ services:
       - .:/opt/project
       - ./htdocs:/var/www/html
     ports:
-      - "2080:80"
+      - "1180:80"
+  php_70_run:
+    build: ./containers/7.0
+    volumes:
+      - .:/opt/project
+      - ./htdocs:/var/www/html
+    ports:
+      - "3180:80"
+  php_70_exec:
+    build: ./containers/7.0
+    volumes:
+      - .:/opt/project
+      - ./htdocs:/var/www/html
+    ports:
+      - "4180:80"
+    command: bash -c "tail -f /dev/null"
   php_71_run:
     build: ./containers/7.1
     volumes:
@@ -76,7 +91,6 @@ services:
     build: ./containers/8.1
     volumes:
       - .:/opt/project
-      - ./htdocs:/var/www/html
     ports:
       - "8081:80"
   php_81_exec:
@@ -98,6 +112,12 @@ services:
       - .:/opt/project
     ports:
       - "9082:80"
+  php_master:
+    build: ./containers/master
+    volumes:
+      - .:/opt/project
+      - ~/.ssh/id_rsa.pub:/home/jetbrains/.ssh/keys/id_rsa.pub:ro
+    command: bash -c "tail -f /dev/null"
   ssh:
     build: ./containers/ssh
     volumes:
