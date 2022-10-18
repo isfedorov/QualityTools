@@ -4,114 +4,162 @@ services:
     build: ./containers/5.6
     volumes:
       - .:/opt/project
+      - /Users/ivan.fedorov/Documents/Deployment/SFTP:/home/jetbrains
+      - ~/.ssh/id_rsa.pub:/home/jetbrains/.ssh/keys/id_rsa.pub:ro
       - ./htdocs:/var/www/html
     ports:
-      - "1080:80"
+      - "3080:80"
+      - "3022:22"
   php_56_exec:
     build: ./containers/5.6
     volumes:
       - .:/opt/project
+      - /Users/ivan.fedorov/Documents/Deployment/SFTP:/home/jetbrains
+      - ~/.ssh/id_rsa.pub:/home/jetbrains/.ssh/keys/id_rsa.pub:ro
       - ./htdocs:/var/www/html
     ports:
-      - "1180:80"
+      - "3180:80"
+      - "3122:22"
   php_70_run:
     build: ./containers/7.0
     volumes:
       - .:/opt/project
+      - /Users/ivan.fedorov/Documents/Deployment/SFTP:/home/jetbrains
+      - ~/.ssh/id_rsa.pub:/home/jetbrains/.ssh/keys/id_rsa.pub:ro
       - ./htdocs:/var/www/html
     ports:
-      - "3180:80"
+      - "3280:80"
+      - "3222:22"
   php_70_exec:
     build: ./containers/7.0
     volumes:
       - .:/opt/project
+      - /Users/ivan.fedorov/Documents/Deployment/SFTP:/home/jetbrains
+      - ~/.ssh/id_rsa.pub:/home/jetbrains/.ssh/keys/id_rsa.pub:ro
       - ./htdocs:/var/www/html
     ports:
-      - "4180:80"
-    command: bash -c "tail -f /dev/null"
+      - "3380:80"
+      - "3322:22"
   php_71_run:
     build: ./containers/7.1
     volumes:
       - .:/opt/project
+      - /Users/ivan.fedorov/Documents/Deployment/SFTP:/home/jetbrains
+      - ~/.ssh/id_rsa.pub:/home/jetbrains/.ssh/keys/id_rsa.pub:ro
       - ./htdocs:/var/www/html
     ports:
-      - "3080:80"
+      - "3480:80"
+      - "3422:22"
   php_71_exec:
     build: ./containers/7.1
     volumes:
       - .:/opt/project
+      - /Users/ivan.fedorov/Documents/Deployment/SFTP:/home/jetbrains
+      - ~/.ssh/id_rsa.pub:/home/jetbrains/.ssh/keys/id_rsa.pub:ro
       - ./htdocs:/var/www/html
     ports:
-      - "4080:80"
-    command: bash -c "tail -f /dev/null"
+      - "3580:80"
+      - "3522:22"
   php_72_run:
     build: ./containers/7.1
     volumes:
       - .:/opt/project
+      - /Users/ivan.fedorov/Documents/Deployment/SFTP:/home/jetbrains
+      - ~/.ssh/id_rsa.pub:/home/jetbrains/.ssh/keys/id_rsa.pub:ro
       - ./htdocs:/var/www/html
     ports:
-      - "5080:80"
+      - "3680:80"
+      - "3622:22"
   php_72_exec:
     build: ./containers/7.2
     volumes:
       - .:/opt/project
+      - /Users/ivan.fedorov/Documents/Deployment/SFTP:/home/jetbrains
+      - ~/.ssh/id_rsa.pub:/home/jetbrains/.ssh/keys/id_rsa.pub:ro
       - ./htdocs:/var/www/html
     ports:
-      - "5180:80"
-    command: bash -c "tail -f /dev/null"
+      - "3780:80"
+      - "3722:22"
   php_74_run:
     build: ./containers/7.4
     volumes:
       - .:/opt/project
+      - /Users/ivan.fedorov/Documents/Deployment/SFTP:/home/jetbrains
+      - ~/.ssh/id_rsa.pub:/home/jetbrains/.ssh/keys/id_rsa.pub:ro
       - ./htdocs:/var/www/html
     ports:
-      - "6080:80"
+      - "3880:80"
+      - "3822:22"
   php_74_exec:
     build: ./containers/7.4
     volumes:
       - .:/opt/project
+      - /Users/ivan.fedorov/Documents/Deployment/SFTP:/home/jetbrains
+      - ~/.ssh/id_rsa.pub:/home/jetbrains/.ssh/keys/id_rsa.pub:ro
       - ./htdocs:/var/www/html
     ports:
-      - "7080:80"
+      - "3980:80"
+      - "3922:22"
   php_80_run:
     build: ./containers/8.0
     volumes:
       - .:/opt/project
+      - /Users/ivan.fedorov/Documents/Deployment/SFTP:/home/jetbrains
+      - ~/.ssh/id_rsa.pub:/home/jetbrains/.ssh/keys/id_rsa.pub:ro
       - ./htdocs:/var/www/html
     ports:
-      - "8080:80"
+      - "4080:80"
+      - "4022:22"
   php_80_exec:
     build: ./containers/8.0
     volumes:
       - .:/opt/project
+      - /Users/ivan.fedorov/Documents/Deployment/SFTP:/home/jetbrains
+      - ~/.ssh/id_rsa.pub:/home/jetbrains/.ssh/keys/id_rsa.pub:ro
       - ./htdocs:/var/www/html
     ports:
-      - "9080:80"
+      - "4180:80"
+      - "4122:22"
   php_81_run:
     build: ./containers/8.1
     volumes:
       - .:/opt/project
+      - /Users/ivan.fedorov/Documents/Deployment/SFTP:/home/jetbrains
+      - ~/.ssh/id_rsa.pub:/home/jetbrains/.ssh/keys/id_rsa.pub:ro
+      - ./htdocs:/var/www/html
     ports:
-      - "8081:80"
+      - "4280:80"
+      - "4222:22"
   php_81_exec:
     build: ./containers/8.1
     volumes:
       - .:/opt/project
+      - /Users/ivan.fedorov/Documents/Deployment/SFTP:/home/jetbrains
+      - ~/.ssh/id_rsa.pub:/home/jetbrains/.ssh/keys/id_rsa.pub:ro
+      - ./htdocs:/var/www/html
     ports:
-      - "9081:80"
+      - "4380:80"
+      - "4322:22"
   php_82_run:
     build: ./containers/8.2
     volumes:
       - .:/opt/project
+      - /Users/ivan.fedorov/Documents/Deployment/SFTP:/home/jetbrains
+      - ~/.ssh/id_rsa.pub:/home/jetbrains/.ssh/keys/id_rsa.pub:ro
       - ./htdocs:/var/www/html
     ports:
-      - "8082:80"
+      - "4480:80"
+      - "4422:22"
   php_82_exec:
     build: ./containers/8.2
     volumes:
       - .:/opt/project
+      - /Users/ivan.fedorov/Documents/Deployment/SFTP:/home/jetbrains
+      - ~/.ssh/id_rsa.pub:/home/jetbrains/.ssh/keys/id_rsa.pub:ro
+      - ./htdocs:/var/www/html
     ports:
-      - "9082:80"
+      - "4580:80"
+      - "4522:22"
   php_master:
     build: ./containers/master
     volumes:
@@ -124,5 +172,6 @@ services:
       - /Users/ivan.fedorov/Documents/Deployment/SFTP:/home/jetbrains
       - .:/home/jetbrains
       - ~/.ssh/id_rsa.pub:/home/jetbrains/.ssh/keys/id_rsa.pub:ro
+      - ./htdocs:/var/www/html
     ports:
       - "3022:22"
