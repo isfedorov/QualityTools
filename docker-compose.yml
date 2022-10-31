@@ -1,7 +1,9 @@
-version: '3'
+version: "3.9"
 services:
   php_56_run:
-    build: ./containers/5.6
+    build:
+      context: .
+      dockerfile: ./containers/5.6/Dockerfile
     volumes:
       - .:/opt/project
       - /Users/ivan.fedorov/Documents/Deployment/SFTP:/home/jetbrains
@@ -11,7 +13,9 @@ services:
       - "3080:80"
       - "3022:22"
   php_56_exec:
-    build: ./containers/5.6
+    build:
+      context: .
+      dockerfile: ./containers/5.6/Dockerfile
     volumes:
       - .:/opt/project
       - /Users/ivan.fedorov/Documents/Deployment/SFTP:/home/jetbrains
@@ -21,7 +25,9 @@ services:
       - "3180:80"
       - "3122:22"
   php_70_run:
-    build: ./containers/7.0
+    build:
+      context: .
+      dockerfile: ./containers/7.0/Dockerfile
     volumes:
       - .:/opt/project
       - /Users/ivan.fedorov/Documents/Deployment/SFTP:/home/jetbrains
@@ -31,7 +37,9 @@ services:
       - "3280:80"
       - "3222:22"
   php_70_exec:
-    build: ./containers/7.0
+    build:
+      context: .
+      dockerfile: ./containers/7.0/Dockerfile
     volumes:
       - .:/opt/project
       - /Users/ivan.fedorov/Documents/Deployment/SFTP:/home/jetbrains
@@ -41,7 +49,9 @@ services:
       - "3380:80"
       - "3322:22"
   php_71_run:
-    build: ./containers/7.1
+    build:
+      context: .
+      dockerfile: ./containers/7.1/Dockerfile
     volumes:
       - .:/opt/project
       - /Users/ivan.fedorov/Documents/Deployment/SFTP:/home/jetbrains
@@ -51,7 +61,9 @@ services:
       - "3480:80"
       - "3422:22"
   php_71_exec:
-    build: ./containers/7.1
+    build:
+      context: .
+      dockerfile: ./containers/7.1/Dockerfile
     volumes:
       - .:/opt/project
       - /Users/ivan.fedorov/Documents/Deployment/SFTP:/home/jetbrains
@@ -61,7 +73,9 @@ services:
       - "3580:80"
       - "3522:22"
   php_72_run:
-    build: ./containers/7.1
+    build:
+      context: .
+      dockerfile: ./containers/7.2/Dockerfile
     volumes:
       - .:/opt/project
       - /Users/ivan.fedorov/Documents/Deployment/SFTP:/home/jetbrains
@@ -71,7 +85,9 @@ services:
       - "3680:80"
       - "3622:22"
   php_72_exec:
-    build: ./containers/7.2
+    build:
+      context: .
+      dockerfile: ./containers/7.2/Dockerfile
     volumes:
       - .:/opt/project
       - /Users/ivan.fedorov/Documents/Deployment/SFTP:/home/jetbrains
@@ -81,7 +97,9 @@ services:
       - "3780:80"
       - "3722:22"
   php_74_run:
-    build: ./containers/7.4
+    build:
+      context: .
+      dockerfile: ./containers/7.4/Dockerfile
     volumes:
       - .:/opt/project
       - /Users/ivan.fedorov/Documents/Deployment/SFTP:/home/jetbrains
@@ -91,7 +109,9 @@ services:
       - "3880:80"
       - "3822:22"
   php_74_exec:
-    build: ./containers/7.4
+    build:
+      context: .
+      dockerfile: ./containers/7.4/Dockerfile
     volumes:
       - .:/opt/project
       - /Users/ivan.fedorov/Documents/Deployment/SFTP:/home/jetbrains
@@ -101,7 +121,9 @@ services:
       - "3980:80"
       - "3922:22"
   php_80_run:
-    build: ./containers/8.0
+    build:
+      context: .
+      dockerfile: ./containers/8.0/Dockerfile
     volumes:
       - .:/opt/project
       - /Users/ivan.fedorov/Documents/Deployment/SFTP:/home/jetbrains
@@ -111,7 +133,9 @@ services:
       - "4080:80"
       - "4022:22"
   php_80_exec:
-    build: ./containers/8.0
+    build:
+      context: .
+      dockerfile: ./containers/8.0/Dockerfile
     volumes:
       - .:/opt/project
       - /Users/ivan.fedorov/Documents/Deployment/SFTP:/home/jetbrains
@@ -121,7 +145,9 @@ services:
       - "4180:80"
       - "4122:22"
   php_81_run:
-    build: ./containers/8.1
+    build:
+      context: .
+      dockerfile: ./containers/8.1/Dockerfile
     volumes:
       - .:/opt/project
       - /Users/ivan.fedorov/Documents/Deployment/SFTP:/home/jetbrains
@@ -131,7 +157,9 @@ services:
       - "4280:80"
       - "4222:22"
   php_81_exec:
-    build: ./containers/8.1
+    build:
+      context: .
+      dockerfile: ./containers/8.1/Dockerfile
     volumes:
       - .:/opt/project
       - /Users/ivan.fedorov/Documents/Deployment/SFTP:/home/jetbrains
@@ -141,7 +169,9 @@ services:
       - "4380:80"
       - "4322:22"
   php_82_run:
-    build: ./containers/8.2
+    build:
+      context: .
+      dockerfile: ./containers/8.2/Dockerfile
     volumes:
       - .:/opt/project
       - /Users/ivan.fedorov/Documents/Deployment/SFTP:/home/jetbrains
@@ -151,7 +181,9 @@ services:
       - "4480:80"
       - "4422:22"
   php_82_exec:
-    build: ./containers/8.2
+    build:
+      context: .
+      dockerfile: ./containers/8.2/Dockerfile
     volumes:
       - .:/opt/project
       - /Users/ivan.fedorov/Documents/Deployment/SFTP:/home/jetbrains
@@ -160,18 +192,20 @@ services:
     ports:
       - "4580:80"
       - "4522:22"
-  php_master:
-    build: ./containers/master
-    volumes:
-      - .:/opt/project
-      - ~/.ssh/id_rsa.pub:/home/jetbrains/.ssh/keys/id_rsa.pub:ro
-    command: bash -c "tail -f /dev/null"
-  ssh:
-    build: ./containers/ssh
-    volumes:
-      - /Users/ivan.fedorov/Documents/Deployment/SFTP:/home/jetbrains
-      - .:/home/jetbrains
-      - ~/.ssh/id_rsa.pub:/home/jetbrains/.ssh/keys/id_rsa.pub:ro
-      - ./htdocs:/var/www/html
-    ports:
-      - "3022:22"
+  #php_master:
+  #  build:
+  #    context: .
+  #    dockerfile: ./containers/master
+  #  volumes:
+  #    - .:/opt/project
+  #    - ~/.ssh/id_rsa.pub:/home/jetbrains/.ssh/keys/id_rsa.pub:ro
+  #  command: bash -c "tail -f /dev/null"
+  #ssh:
+  #  build: ./containers/ssh
+  #  volumes:
+  #    - /Users/ivan.fedorov/Documents/Deployment/SFTP:/home/jetbrains
+  #    - .:/home/jetbrains
+  #    - ~/.ssh/id_rsa.pub:/home/jetbrains/.ssh/keys/id_rsa.pub:ro
+  #    - ./htdocs:/var/www/html
+  #  ports:
+  #    - "3022:22"

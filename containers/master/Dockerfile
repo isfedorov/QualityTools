@@ -4,8 +4,8 @@ RUN apt-get update && apt-get -y install openssh-server lsb-release apt-transpor
     libsqlite3-dev make xz-utils vim
 RUN useradd -rm -d /home/jetbrains -s /bin/bash -g root -G sudo -u 1000 jetbrains
 RUN  echo 'jetbrains:jetbrains' | chpasswd
-COPY ./entrypoint.sh /home/jetbrains
+#COPY ./entrypoint.sh /home/jetbrains
 WORKDIR /home/jetbrains
 EXPOSE 22
 
-ENTRYPOINT ["/home/jetbrains/entrypoint.sh"]
+#ENTRYPOINT ["/home/jetbrains/entrypoint.sh"]
