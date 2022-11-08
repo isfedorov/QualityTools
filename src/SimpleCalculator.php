@@ -3,6 +3,9 @@ declare(strict_types=1);
 
 namespace QualityTools\General;
 
+/**
+ * Cancellation tokens are simple objects that allow registering handlers to subscribe to cancellation requests.
+ */
 class SimpleCalculator
 {
     public array $prop;

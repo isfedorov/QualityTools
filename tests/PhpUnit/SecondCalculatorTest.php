@@ -1,6 +1,6 @@
 <?php
 
-namespace QualityTools\Tests\PhpUnit;
+namespace QualityTools\General\Tests\PhpUnit;
 
 class SecondCalculatorTest extends BaseCalculatorTest
 {

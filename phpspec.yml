@@ -1,5 +1,5 @@
 suites:
   quality_tools_suite:
-    namespace: QualityTools
+    namespace: QualityTools\General
     spec_prefix:
     spec_path: 'tests/PhpSpec/'

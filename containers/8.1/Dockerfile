@@ -11,6 +11,7 @@ RUN echo "xdebug.client_host=host.docker.internal" >> /usr/local/etc/php/php.ini
 RUN echo "xdebug.start_with_request=yes" >> /usr/local/etc/php/php.ini
 RUN echo "xdebug.output_dir=/opt/project/xdebug_snapshots" >> /usr/local/etc/php/php.ini
 RUN echo "xdebug.log=/opt/project/xdebug_logs/xdebug31php81.log" >> /usr/local/etc/php/php.ini
+RUN echo "xdebug.log_level=11" >> /usr/local/etc/php/php.ini
 RUN a2enmod ssl
 RUN a2enmod socache_shmcb
 RUN a2ensite default-ssl.conf

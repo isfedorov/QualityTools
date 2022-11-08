@@ -1,8 +1,8 @@
 <?php
 
-namespace QualityTools\Tests\PhpUnit;
+namespace QualityTools\General\Tests\PhpUnit;
 
-use QualityTools\SimpleCalculator;
+use QualityTools\General\SimpleCalculator;
 
 class SimpleCalculatorTest extends BaseCalculatorTest
 {

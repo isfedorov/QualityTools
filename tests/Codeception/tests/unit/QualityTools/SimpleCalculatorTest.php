@@ -1,9 +1,7 @@
 <?php
 namespace QualityTools\Tests\Codeception\tests\unit\QualityTools;
 
-use Exception;
 use QualityTools\General\SimpleCalculator;
-use function self;
 
 class SimpleCalculatorTest extends \Codeception\Test\Unit
 {

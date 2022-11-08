@@ -27,7 +27,8 @@
     "codeception/module-asserts": "@stable",
     "brianium/paratest": "@stable",
     "consolidation/robo": "@stable",
-    "symfony/var-dumper": "@stable"
+    "symfony/var-dumper": "@stable",
+    "phpspec/prophecy": "@stable"
   },
   "scripts": {
     "phpcs": "vendor/bin/phpcs src tests --standard=phpcs.xml",
