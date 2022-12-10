@@ -1,4 +1,4 @@
-FROM php:8.2.0RC5-apache
+FROM php:8.2.0-apache
 RUN echo 'memory_limit = 2048M' >> /usr/local/etc/php/conf.d/docker-php-memlimit.ini
 COPY --from=composer /usr/bin/composer /usr/bin/composer
 RUN apt-get update -y && \

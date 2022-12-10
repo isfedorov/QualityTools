@@ -2,8 +2,8 @@ FROM php:7.4-apache
 RUN echo 'memory_limit = 2048M' >> /usr/local/etc/php/conf.d/docker-php-memlimit.ini
 COPY --from=composer /usr/bin/composer /usr/bin/composer
 ENV DEBIAN_FRONTEND=noninteractive
-RUN apt-get update && apt-get -y install software-properties-common openssh-server sudo git libicu-dev zip unzip apache2 apache2-utils ssl-cert iputils-ping
-RUN docker-php-ext-install mysqli intl
+RUN apt-get update && apt-get -y install software-properties-common openssh-server sudo git libzip-dev libicu-dev zip unzip apache2 apache2-utils ssl-cert iputils-ping
+RUN docker-php-ext-install mysqli zip intl
 RUN useradd -rm -d /home/jetbrains -s /bin/bash -g root -G sudo -u 1000 jetbrains
 RUN echo 'jetbrains:jetbrains' | chpasswd
 RUN pecl install xdebug-3.0.3
