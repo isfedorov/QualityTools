@@ -3,6 +3,9 @@ declare(strict_types=1);
 
 namespace QualityTools\General;
 
+/**
+* my comment
+*/
 class SimpleCalculator
 {
     public array $prop;
