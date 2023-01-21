@@ -47,8 +47,6 @@ return (new PhpCsFixer\Config())
         'no_short_bool_cast' => true,
         'no_singleline_whitespace_before_semicolons' => true,
         'no_spaces_around_offset' => true,
-        'no_trailing_comma_in_list_call' => true,
-        'no_trailing_comma_in_singleline_array' => true,
         'no_unneeded_control_parentheses' => ['statements' => ['break', 'clone', 'continue', 'echo_print', 'return', 'switch_case', 'yield', 'yield_from']],
         'no_unneeded_curly_braces' => ['namespaces' => true],
         'no_unset_cast' => true,
