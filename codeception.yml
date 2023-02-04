@@ -1,16 +1,16 @@
 paths:
-    tests: tests/Codeception/tests
-    output: tests/Codeception/tests/_output
-    data: tests/Codeception/tests/_data
-    support: tests/Codeception/tests/_support
-    envs: tests/Codeception/tests/_envs
+  tests: tests/Codeception/tests
+  output: tests/Codeception/tests/_output
+  data: tests/Codeception/tests/_data
+  support: tests/Codeception/tests/_support
+  envs: tests/Codeception/tests/_envs
 actor_suffix: Tester
 extensions:
-    enabled:
-        - Codeception\Extension\RunFailed
+  enabled:
+    - Codeception\Extension\RunFailed
 coverage:
-    enabled: true
-    include:
-        - src/*
-    exclude:
-        - vendor/*
+  enabled: true
+  include:
+    - src/*
+  exclude:
+    - vendor/*

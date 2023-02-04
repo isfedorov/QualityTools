@@ -1,13 +1,14 @@
 <?php
-declare(strict_types=1);
 
 namespace QualityTools\General;
 
-/**
-* my comment
-*/
+
+use ArrayAccess;
+use function array_sum;
+
 class SimpleCalculator
 {
+
     public array $prop;
 
     public function __construct()
@@ -15,7 +16,12 @@ class SimpleCalculator
         $this->prop = array();
     }
 
-    public function add($a, $b)
+    /**
+     * @param int $a desc
+     * @param int $b
+     * @return int
+     */
+    public function add(int $a, int $b): int
     {
         return $a + $b;
     }
@@ -23,5 +29,10 @@ class SimpleCalculator
     public function sub($a, $b)
     {
         return $a - $b;
+    }
+
+    public function sumArrayElements(ArrayProvider $arrayProvider)
+    {
+        return array_sum($arrayProvider->getArray());
     }
 }

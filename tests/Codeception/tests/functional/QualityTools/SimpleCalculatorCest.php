@@ -1,4 +1,5 @@
 <?php
+
 namespace QualityTools\Tests\Codeception\tests\functional\QualityTools;
 
 use FunctionalTester;
@@ -12,11 +13,9 @@ class SimpleCalculatorCest
     // tests
     public function tryToAdd(FunctionalTester $I)
     {
-        echo 1;
     }
 
     public function tryToRemove(FunctionalTester $I)
     {
-        echo 1;
     }
 }

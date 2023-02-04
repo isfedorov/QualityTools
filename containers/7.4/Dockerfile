@@ -7,11 +7,13 @@ RUN docker-php-ext-install mysqli zip intl
 RUN useradd -rm -d /home/jetbrains -s /bin/bash -g root -G sudo -u 1000 jetbrains
 RUN echo 'jetbrains:jetbrains' | chpasswd
 RUN pecl install xdebug-3.0.3
+#RUN pecl install xdebug-3.1.6
 RUN docker-php-ext-enable xdebug
 RUN echo "xdebug.mode=debug" >> /usr/local/etc/php/php.ini
 #RUN echo "xdebug.client_host=192.168.178.178" >> /usr/local/etc/php/php.ini
 RUN echo "xdebug.client_host=host.docker.internal" >> /usr/local/etc/php/php.ini
-RUN echo "xdebug.start_with_request=yes" >> /usr/local/etc/php/php.ini
+RUN echo "xdebug.start_with_request=trigger" >> /usr/local/etc/php/php.ini
+RUN echo "xdebug.discover_client_host=true" >> /usr/local/etc/php/php.ini
 RUN echo "xdebug.output_dir=/opt/project/xdebug_snapshots" >> /usr/local/etc/php/php.ini
 RUN echo "xdebug.log=/opt/project/xdebug_logs/xdebug30php74.log" >> /usr/local/etc/php/php.ini
 RUN a2enmod ssl

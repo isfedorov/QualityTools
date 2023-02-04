@@ -6,7 +6,6 @@ use Exception;
 use function array_map;
 use function dump;
 use function func_get_args;
-use function self;
 
 class StaticMethods
 {

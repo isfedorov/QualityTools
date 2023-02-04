@@ -14,7 +14,7 @@
     "rector/rector": "@stable",
     "phing/phing": "@stable",
     "phpunit/phpunit": "@stable",
-    "mockery/mockery": "@stable",
+    "mockery/mockery": "1.5.1",
     "codeception/codeception": "@stable",
     "phpspec/phpspec": "@stable",
     "behat/behat": "@stable",

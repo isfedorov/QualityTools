@@ -11,7 +11,7 @@
     </description>
 
     <rule name="FunctionRule"
-          message = "Please do not use functions."
+          message="Please do not use functions."
           class="\QualityTools\General\Rules\MyCustomPHPMDRule"
           externalInfoUrl="http://example.com/phpmd/rules.html#functionrule">
         <priority>1</priority>

@@ -2,9 +2,12 @@
 
 namespace QualityTools\General\Rules;
 
-class MyCustomPHPMDRule extends \PHPMD\AbstractRule
+use PHPMD\AbstractNode;
+use PHPMD\AbstractRule;
+
+class MyCustomPHPMDRule extends AbstractRule
 {
-    public function apply(\PHPMD\AbstractNode $node)
+    public function apply(AbstractNode $node)
     {
         // Check constraints against the given node instance
     }

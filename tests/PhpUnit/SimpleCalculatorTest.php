@@ -2,14 +2,24 @@
 
 namespace QualityTools\General\Tests\PhpUnit;
 
-use QualityTools\General\SimpleCalculator;
+use PHPUnit\Framework\TestCase;
 
-class SimpleCalculatorTest extends BaseCalculatorTest
+class SimpleCalculatorTest extends TestCase
 {
-
-    public function testAdd()
+    /**
+     * @dataProvider provideArray()
+     */
+    public function testArrayDataProvider($input)
     {
-        $calc = new SimpleCalculator();
-        self::assertEquals(3, $calc->add(1, 2));
+        self::assertEquals(1, $input);
+    }
+
+    public function provideArray()
+    {
+        return array(
+            '1' => array(1),
+            2 => [2],
+            '3' => array(3)
+        );
     }
 }

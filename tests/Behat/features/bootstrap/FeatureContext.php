@@ -1,8 +1,6 @@
 <?php
 
 use Behat\Behat\Context\Context;
-use Behat\Gherkin\Node\PyStringNode;
-use Behat\Gherkin\Node\TableNode;
 
 /**
  * Defines application features from the specific context.
@@ -12,6 +10,7 @@ class FeatureContext implements Context
     private $firstDigit;
     private $secondDigit;
     private $result;
+
     /**
      * Initializes context.
      *
@@ -37,7 +36,7 @@ class FeatureContext implements Context
      */
     public function iAddTo($arg1, $arg2)
     {
-        $this->result = $this->firstDigit + $this->secondDigit; 
+        $this->result = $this->firstDigit + $this->secondDigit;
     }
 
     /**
@@ -45,7 +44,7 @@ class FeatureContext implements Context
      */
     public function iReceive($arg1)
     {
-        if ($this->result !== (int)$arg1){
+        if ($this->result !== (int)$arg1) {
             throw new Exception("Wrong result");
         }
     }

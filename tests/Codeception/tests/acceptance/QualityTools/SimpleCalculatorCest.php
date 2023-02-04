@@ -1,14 +1,14 @@
 <?php
+
 namespace QualityTools\Tests\Codeception\tests\acceptance\QualityTools;
 
 use AcceptanceTester;
 use Prophecy\Prophet;
-use QualityTools\General\ArrayProvider;
 use QualityTools\General\SimpleCalculator;
+use function PHPUnit\Framework\assertEquals;
 
 class SimpleCalculatorCest
 {
-    private $prophet;
     public function _before(AcceptanceTester $I)
     {
         $this->prophet = new Prophet();
@@ -17,9 +17,7 @@ class SimpleCalculatorCest
     // tests
     public function tryToAdd(AcceptanceTester $I)
     {
-        $calc = $this->prophet->prophesize(ArrayProvider::class);
-        $calc->readArray()->willReturn([4,5,6]);
-        $res = (new SimpleCalculator())->sumOfArrayElements($calc->reveal());
+        assertEquals(3, (new SimpleCalculator())->add(1, 1));
     }
 
     // tests

@@ -1,16 +1,21 @@
 <?php
-for($i=1;$i<=500;$i++) {
+for ($i = 1; $i <= 500; $i++) {
     $newFile = "tests/PhpUnit/Generated/Sample{$i}Test.php";
+    if (!file_exists("tests/PhpUnit/Generated")) {
+        mkdir("tests/PhpUnit/Generated");
+    }
     if (!file_exists($newFile)) {
-        file_put_contents($newFile, <<<EOF
+        file_put_contents(
+            $newFile,
+            <<<EOF
 <?php
 namespace QualityTools\General\Tests\PhpUnit\Generated;
-
-use PHPUnit\Framework\TestCase;
 use QualityTools\General\SimpleCalculator;
 
 class Sample{$i}Test extends TestCase
 {
+    private array \$prop;
+    
     public function testArrayDataProvider1()
     {
         self::assertEquals(2, (new SimpleCalculator())->add(1, 1));
@@ -27,6 +32,6 @@ class Sample{$i}Test extends TestCase
     }
 }
 EOF
-);
+        );
     }
 }

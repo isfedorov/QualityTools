@@ -1,48 +1,33 @@
 <?php
+
 namespace QualityTools\Tests\Codeception\tests\unit\QualityTools;
 
+use Codeception\Test\Unit;
 use QualityTools\General\SimpleCalculator;
+use UnitTester;
 
-class SimpleCalculatorTest extends \Codeception\Test\Unit
+class SimpleCalculatorTest extends Unit
 {
     /**
-     * @var \UnitTester
+     * @var UnitTester
      */
     protected $tester;
-    
-    protected function _before()
+
+
+    public function getArray()
     {
+        return [
+            [1,2],
+            [3,4]
+        ];
     }
 
-    protected function _after()
-    {
-    }
-
-    // tests
-    public function testSubstraction()
+    /**
+     * @dataProvider getArray
+     */
+    public function testAddition($a, $b)
     {
         $calc = new SimpleCalculator();
-        self::assertEquals(1, $calc->sub(2, 1));
-    }
-
-    public function testAddition()
-    {
-        $calc = new SimpleCalculator();
-        self::assertEquals(1, $calc->add(2, 1));
-    }
-
-    public function testIncomplete()
-    {
-        self::markTestIncomplete("This test is incomplete");
-    }
-
-    public function testSkipped()
-    {
-        self::markTestSkipped('This test is skipped');
-    }
-
-    public function testExit()
-    {
-        exit("Die here");
+        self::assertEquals(3, $calc->add($a, $b));
     }
 }
