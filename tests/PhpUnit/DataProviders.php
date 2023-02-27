@@ -4,7 +4,7 @@ namespace QualityTools\General\Tests\PhpUnit;
 
 class DataProviders
 {
-    public function provideArray()
+    public static function provideArray()
     {
         return [
             0 => [[1, 2, 3]],

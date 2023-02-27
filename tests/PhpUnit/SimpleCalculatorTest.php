@@ -2,24 +2,23 @@
 
 namespace QualityTools\General\Tests\PhpUnit;
 
+use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
 
 class SimpleCalculatorTest extends TestCase
 {
-    /**
-     * @dataProvider provideArray()
-     */
+    #[DataProvider('provideArray')]
     public function testArrayDataProvider($input)
     {
         self::assertEquals(1, $input);
     }
 
-    public function provideArray()
+    public static function provideArray(): array
     {
-        return array(
-            '1' => array(1),
+        return [
+            '1' => [1],
             2 => [2],
-            '3' => array(3)
-        );
+            '3' => [3]
+        ];
     }
 }

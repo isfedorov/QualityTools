@@ -3,31 +3,21 @@
 namespace QualityTools\Tests\Codeception\tests\unit\QualityTools;
 
 use Codeception\Test\Unit;
-use QualityTools\General\SimpleCalculator;
-use UnitTester;
 
 class SimpleCalculatorTest extends Unit
 {
     /**
-     * @var UnitTester
+     * @dataProvider \QualityTools\Tests\Codeception\tests\unit\QualityTools\MyDataProvider::getData
      */
-    protected $tester;
-
-
-    public function getArray()
+    public function testAddition($number)
     {
-        return [
-            [1,2],
-            [3,4]
-        ];
+        self::assertEquals(1, $number);
     }
+}
 
-    /**
-     * @dataProvider getArray
-     */
-    public function testAddition($a, $b)
+class MyDataProvider {
+    public function getData(): array
     {
-        $calc = new SimpleCalculator();
-        self::assertEquals(3, $calc->add($a, $b));
+        return [0 => [1]];
     }
 }

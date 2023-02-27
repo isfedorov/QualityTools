@@ -1,24 +1,19 @@
 <?php
 
-namespace PhpUnit;
-
-
+namespace QualityTools\General\Tests\PhpUnit;
 
 use Mockery;
-use PHPUnit\Framework\TestCase;
-use QualityTools\General\ArrayProvider;
+use PHPUnit\Framework\Attributes\DataProviderExternal;
 use QualityTools\General\SimpleCalculator;
 
-class SampleMockeryTest extends TestCase
+class SampleMockeryTest extends BaseCalculatorTest
 {
-    /**
-     * @dataProvider \QualityTools\General\Tests\PhpUnit\DataProviders::provideArray
-     */
+    #[DataProviderExternal('QualityTools\General\Tests\PhpUnit\DataProviders', 'provideArray')]
     public function testSumma($array)
     {
-        $mock = \Mockery::mock(ArrayProvider::class)->makePartial();
+        $mock = Mockery::mock(\QualityTools\General\ArrayProvider::class)->makePartial();
         $mock->allows()->getArray()->andReturn($array);
         $res = (new SimpleCalculator())->sumArrayElements($mock);
-        $this->assertEquals(15, $res);
+        static::assertEquals(15, $res);
     }
 }

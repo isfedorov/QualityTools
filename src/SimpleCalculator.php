@@ -2,14 +2,11 @@
 
 namespace QualityTools\General;
 
-
-use ArrayAccess;
 use function array_sum;
 
 class SimpleCalculator
 {
-
-    public array $prop;
+    public $prop;
 
     public function __construct()
     {
@@ -31,7 +28,7 @@ class SimpleCalculator
         return $a - $b;
     }
 
-    public function sumArrayElements(ArrayProvider $arrayProvider)
+    public function sumArrayElements(ArrayProvider $arrayProvider) //some long long comment that doesn't fir the lenght of line
     {
         return array_sum($arrayProvider->getArray());
     }

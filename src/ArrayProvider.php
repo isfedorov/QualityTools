@@ -5,10 +5,6 @@ class ArrayProvider
 {
     public function getArray()
     {
-        return array(
-            1,
-            2,
-            3,
-        );
+        return [1, 2, 3];
     }
 }

@@ -9,8 +9,8 @@ for ($i = 1; $i <= 500; $i++) {
             $newFile,
             <<<EOF
 <?php
-namespace QualityTools\General\Tests\PhpUnit\Generated;
-use QualityTools\General\SimpleCalculator;
+namespace SubProjectPSR0Auto\General\Tests\PhpUnit\Generated;
+use SubProjectPSR0Auto\General\SimpleCalculator;
 
 class Sample{$i}Test extends TestCase
 {

@@ -1,0 +1,40 @@
+{
+  "autoload": {
+    "psr-4": {
+      "SubProjectPSR4\\General\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "SubProjectPSR4\\General\\Tests\\Codeception\\": "tests/Codeception",
+      "SubProjectPSR4\\General\\Tests\\PhpUnit\\": "tests/PhpUnit"
+    }
+  },
+  "require": {
+    "php": "8.2",
+    "money/money": "@stable"
+  },
+  "require-dev": {
+    "rector/rector": "@stable",
+    "phing/phing": "@stable",
+    "phpunit/phpunit": "^10",
+    "mockery/mockery": "1.5.1",
+    "behat/behat": "@stable",
+    "squizlabs/php_codesniffer": "@stable",
+    "phpmd/phpmd": "@stable",
+    "friendsofphp/php-cs-fixer": "@stable",
+    "vimeo/psalm": "5.7.7",
+    "phpstan/phpstan": "@stable",
+    "consolidation/robo": "4.0.3",
+    "symfony/var-dumper": "@stable",
+    "phpspec/prophecy": "@stable"
+  },
+  "scripts": {
+    "phpcs": "vendor/bin/phpcs src tests --standard=phpcs.xml",
+    "php-cs-fixer-check": "php-cs-fixer fix src tests --config=.php-cs-fixer.php --dry-run",
+    "php-cs-fixer-fix": "php-cs-fixer fix src tests --config=.php-cs-fixer.php",
+    "phpmd": "phpmd src xml codesize,design,naming,controversial,unusedcode",
+    "psalm": "psalm -c psalm.xml --show-info=true --find-unused-code --find-unused-psalm-suppress src tests",
+    "phpstan": "phpstan analyse -c phpstan-config.neon --memory-limit=4G"
+  }
+}
