@@ -11,6 +11,3 @@ class Sample
 }
 
 Sample::foo();
-
-
-///comment
