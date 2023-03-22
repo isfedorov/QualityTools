@@ -1,10 +1,13 @@
 <?php
 
-function foo($a) {
-    if (is_array($a)) {
-        var_dump($a);
-    } elseif (is_int($a) && is_object($a)) {
-        var_dump($a);
+class Sample
+{
+    public static array $statProp = [];
+
+    public static function foo()
+    {
+        return self::$statProp;
     }
 }
-foo(1);
+
+Sample::foo();
