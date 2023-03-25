@@ -1,2 +1,4 @@
 <?php
-$arr = array();
+class Sample {
+
+}
