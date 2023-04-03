@@ -1,4 +1,2 @@
 <?php
-class Sample {
-
-}
+$a = array();
