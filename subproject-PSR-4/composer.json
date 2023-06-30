@@ -6,13 +6,8 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "SubProjectPSR4\\General\\Tests\\Codeception\\": "tests/Codeception",
       "SubProjectPSR4\\General\\Tests\\PhpUnit\\": "tests/PhpUnit"
     }
-  },
-  "require": {
-    "php": "8.2",
-    "money/money": "@stable"
   },
   "require-dev": {
     "rector/rector": "@stable",

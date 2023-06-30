@@ -2,8 +2,6 @@
 
 namespace QualityTools\General;
 
-use function array_sum;
-
 class SimpleCalculator
 {
     public $prop;

@@ -4,5 +4,4 @@ namespace SubProject\General;
 
 class AnotherClass
 {
-
 }

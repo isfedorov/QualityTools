@@ -4,5 +4,4 @@ namespace NonGeneral;
 
 class Summator
 {
-
 }

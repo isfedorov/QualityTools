@@ -7,7 +7,7 @@
          colors="true">
     <testsuites>
         <testsuite name="unit">
-            <file>tests/PhpUnit/SecondCalculatorTest.php</file>
+            <directory>tests/PhpUnit</directory>
         </testsuite>
         <testsuite name="generated">
             <directory>tests/PhpUnit/Generated</directory>

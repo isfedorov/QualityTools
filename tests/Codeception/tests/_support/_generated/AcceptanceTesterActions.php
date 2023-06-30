@@ -1,4 +1,5 @@
 <?php
+
 //[STAMP] 0bd4b77d387704a8c7b356a8a5f28b35
 
 namespace _generated;
@@ -24,6 +25,7 @@ trait AcceptanceTesterActions
      * [!] Method is generated. Documentation taken from corresponding module.
      *
      * Alias to `haveHttpHeader`
+     *
      * @see \Codeception\Module\PhpBrowser::setHeader()
      */
     public function setHeader(string $name, string $value): void
@@ -35,6 +37,7 @@ trait AcceptanceTesterActions
      * [!] Method is generated. Documentation taken from corresponding module.
      *
      * Authenticates user for HTTP_AUTH
+     *
      * @see \Codeception\Module\PhpBrowser::amHttpAuthenticated()
      */
     public function amHttpAuthenticated($username, $password): void
@@ -52,6 +55,7 @@ trait AcceptanceTesterActions
      * $I->amOnUrl('https://codeception.com');
      * $I->amOnPage('/quickstart'); // moves to https://codeception.com/quickstart
      * ```
+     *
      * @see \Codeception\Module\PhpBrowser::amOnUrl()
      */
     public function amOnUrl($url): void
@@ -102,6 +106,7 @@ trait AcceptanceTesterActions
      * If Codeception lacks important Guzzle Client methods, implement them and submit patches.
      *
      * @return mixed
+     *
      * @see \Codeception\Module\PhpBrowser::executeInGuzzle()
      */
     public function executeInGuzzle(Closure $function)
@@ -132,9 +137,10 @@ trait AcceptanceTesterActions
      * $I->haveHttpHeader('Client&#95;Id', 'Codeception');
      * ```
      *
-     * @param string $name the name of the request header
-     * @param string $value the value to set it to for subsequent
+     * @param  string  $name the name of the request header
+     * @param  string  $value the value to set it to for subsequent
      *        requests
+     *
      * @see \Codeception\Lib\InnerBrowser::haveHttpHeader()
      */
     public function haveHttpHeader(string $name, string $value): void
@@ -158,7 +164,8 @@ trait AcceptanceTesterActions
      * $I->amOnPage('some-other-page.php');
      * ```
      *
-     * @param string $name the name of the header to delete.
+     * @param  string  $name the name of the header to delete.
+     *
      * @see \Codeception\Lib\InnerBrowser::deleteHeader()
      */
     public function deleteHeader(string $name): void
@@ -178,6 +185,7 @@ trait AcceptanceTesterActions
      * // opens /register page
      * $I->amOnPage('/register');
      * ```
+     *
      * @see \Codeception\Lib\InnerBrowser::amOnPage()
      */
     public function amOnPage(string $page): void
@@ -213,7 +221,9 @@ trait AcceptanceTesterActions
      * // using strict locator
      * $I->click(['link' => 'Login']);
      * ```
-     * @param string|array $link
+     *
+     * @param  string|array  $link
+     *
      * @see \Codeception\Lib\InnerBrowser::click()
      */
     public function click($link, $context = null): void
@@ -251,7 +261,8 @@ trait AcceptanceTesterActions
      *
      * For checking the raw source code, use `seeInSource()`.
      *
-     * @param array|string $selector optional
+     * @param  array|string  $selector optional
+     *
      * @see \Codeception\Lib\InnerBrowser::see()
      */
     public function see(string $text, $selector = null): void
@@ -287,7 +298,8 @@ trait AcceptanceTesterActions
      *
      * For checking the raw source code, use `seeInSource()`.
      *
-     * @param array|string $selector optional
+     * @param  array|string  $selector optional
+     *
      * @see \Codeception\Lib\InnerBrowser::dontSee()
      */
     public function dontSee(string $text, $selector = null): void
@@ -305,6 +317,7 @@ trait AcceptanceTesterActions
      * <?php
      * $I->seeInSource('<h1>Green eggs &amp; ham</h1>');
      * ```
+     *
      * @see \Codeception\Lib\InnerBrowser::seeInSource()
      */
     public function seeInSource(string $raw): void
@@ -322,6 +335,7 @@ trait AcceptanceTesterActions
      * <?php
      * $I->dontSeeInSource('<h1>Green eggs &amp; ham</h1>');
      * ```
+     *
      * @see \Codeception\Lib\InnerBrowser::dontSeeInSource()
      */
     public function dontSeeInSource(string $raw): void
@@ -340,6 +354,7 @@ trait AcceptanceTesterActions
      * $I->seeLink('Logout'); // matches <a href="#">Logout</a>
      * $I->seeLink('Logout','/logout'); // matches <a href="/logout">Logout</a>
      * ```
+     *
      * @see \Codeception\Lib\InnerBrowser::seeLink()
      */
     public function seeLink(string $text, ?string $url = null): void
@@ -358,9 +373,10 @@ trait AcceptanceTesterActions
      * $I->dontSeeLink('Logout'); // I suppose user is not logged in
      * $I->dontSeeLink('Checkout now', '/store/cart.php');
      * ```
+     *
      * @see \Codeception\Lib\InnerBrowser::dontSeeLink()
      */
-    public function dontSeeLink(string $text, string $url = ""): void
+    public function dontSeeLink(string $text, string $url = ''): void
     {
         $this->getScenario()->runStep(new Action('dontSeeLink', func_get_args()));
     }
@@ -377,6 +393,7 @@ trait AcceptanceTesterActions
      * // to match: /users/1
      * $I->seeInCurrentUrl('/users/');
      * ```
+     *
      * @see \Codeception\Lib\InnerBrowser::seeInCurrentUrl()
      */
     public function seeInCurrentUrl(string $uri): void
@@ -393,6 +410,7 @@ trait AcceptanceTesterActions
      * <?php
      * $I->dontSeeInCurrentUrl('/users/');
      * ```
+     *
      * @see \Codeception\Lib\InnerBrowser::dontSeeInCurrentUrl()
      */
     public function dontSeeInCurrentUrl(string $uri): void
@@ -411,6 +429,7 @@ trait AcceptanceTesterActions
      * // to match root url
      * $I->seeCurrentUrlEquals('/');
      * ```
+     *
      * @see \Codeception\Lib\InnerBrowser::seeCurrentUrlEquals()
      */
     public function seeCurrentUrlEquals(string $uri): void
@@ -429,6 +448,7 @@ trait AcceptanceTesterActions
      * // current url is not root
      * $I->dontSeeCurrentUrlEquals('/');
      * ```
+     *
      * @see \Codeception\Lib\InnerBrowser::dontSeeCurrentUrlEquals()
      */
     public function dontSeeCurrentUrlEquals(string $uri): void
@@ -446,6 +466,7 @@ trait AcceptanceTesterActions
      * // to match root url
      * $I->seeCurrentUrlMatches('~^/users/(\d+)~');
      * ```
+     *
      * @see \Codeception\Lib\InnerBrowser::seeCurrentUrlMatches()
      */
     public function seeCurrentUrlMatches(string $uri): void
@@ -463,6 +484,7 @@ trait AcceptanceTesterActions
      * // to match root url
      * $I->dontSeeCurrentUrlMatches('~^/users/(\d+)~');
      * ```
+     *
      * @see \Codeception\Lib\InnerBrowser::dontSeeCurrentUrlMatches()
      */
     public function dontSeeCurrentUrlMatches(string $uri): void
@@ -481,6 +503,7 @@ trait AcceptanceTesterActions
      * $user_id = $I->grabFromCurrentUrl('~^/user/(\d+)/~');
      * $uri = $I->grabFromCurrentUrl();
      * ```
+     *
      * @see \Codeception\Lib\InnerBrowser::grabFromCurrentUrl()
      */
     public function grabFromCurrentUrl(?string $uri = null): mixed
@@ -499,6 +522,7 @@ trait AcceptanceTesterActions
      * $I->seeCheckboxIsChecked('#signup_form input[type=checkbox]'); // I suppose user agreed to terms, If there is only one checkbox in form.
      * $I->seeCheckboxIsChecked('//form/input[@type=checkbox and @name=agree]');
      * ```
+     *
      * @see \Codeception\Lib\InnerBrowser::seeCheckboxIsChecked()
      */
     public function seeCheckboxIsChecked($checkbox): void
@@ -516,6 +540,7 @@ trait AcceptanceTesterActions
      * $I->dontSeeCheckboxIsChecked('#agree'); // I suppose user didn't agree to terms
      * $I->seeCheckboxIsChecked('#signup_form input[type=checkbox]'); // I suppose user didn't check the first checkbox in form.
      * ```
+     *
      * @see \Codeception\Lib\InnerBrowser::dontSeeCheckboxIsChecked()
      */
     public function dontSeeCheckboxIsChecked($checkbox): void
@@ -539,7 +564,8 @@ trait AcceptanceTesterActions
      * $I->seeInField(['name' => 'search'], 'Search');
      * ```
      *
-     * @param string|array $field
+     * @param  string|array  $field
+     *
      * @see \Codeception\Lib\InnerBrowser::seeInField()
      */
     public function seeInField($field, $value): void
@@ -562,7 +588,9 @@ trait AcceptanceTesterActions
      * $I->dontSeeInField('//form/*[@name=search]','Search');
      * $I->dontSeeInField(['name' => 'search'], 'Search');
      * ```
-     * @param string|array $field
+     *
+     * @param  string|array  $field
+     *
      * @see \Codeception\Lib\InnerBrowser::dontSeeInField()
      */
     public function dontSeeInField($field, $value): void
@@ -625,6 +653,7 @@ trait AcceptanceTesterActions
      * // $I->amOnPage('/path/to/form-page') may be needed
      * $I->seeInFormFields('//form[@id=my-form]', string $form);
      * ```
+     *
      * @see \Codeception\Lib\InnerBrowser::seeInFormFields()
      */
     public function seeInFormFields($formSelector, array $params): void
@@ -668,6 +697,7 @@ trait AcceptanceTesterActions
      *      'checkbox2' => false,       // fails if unchecked
      * ]);
      * ```
+     *
      * @see \Codeception\Lib\InnerBrowser::dontSeeInFormFields()
      */
     public function dontSeeInFormFields($formSelector, array $params): void
@@ -848,6 +878,7 @@ trait AcceptanceTesterActions
      *     ]
      * ]);
      * ```
+     *
      * @see \Codeception\Lib\InnerBrowser::submitForm()
      */
     public function submitForm($selector, array $params, ?string $button = null): void
@@ -865,6 +896,7 @@ trait AcceptanceTesterActions
      * $I->fillField("//input[@type='text']", "Hello World!");
      * $I->fillField(['name' => 'email'], 'jon@example.com');
      * ```
+     *
      * @see \Codeception\Lib\InnerBrowser::fillField()
      */
     public function fillField($field, $value): void
@@ -898,6 +930,7 @@ trait AcceptanceTesterActions
      * $I->selectOption('Which OS do you use?', array('text' => 'Windows')); // Only search by text 'Windows'
      * $I->selectOption('Which OS do you use?', array('value' => 'windows')); // Only search by value 'windows'
      * ```
+     *
      * @see \Codeception\Lib\InnerBrowser::selectOption()
      */
     public function selectOption($select, $option): void
@@ -914,6 +947,7 @@ trait AcceptanceTesterActions
      * <?php
      * $I->checkOption('#agree');
      * ```
+     *
      * @see \Codeception\Lib\InnerBrowser::checkOption()
      */
     public function checkOption($option): void
@@ -930,6 +964,7 @@ trait AcceptanceTesterActions
      * <?php
      * $I->uncheckOption('#notify');
      * ```
+     *
      * @see \Codeception\Lib\InnerBrowser::uncheckOption()
      */
     public function uncheckOption($option): void
@@ -947,6 +982,7 @@ trait AcceptanceTesterActions
      * // file is stored in 'tests/_data/prices.xls'
      * $I->attachFile('input[@type="file"]', 'prices.xls');
      * ```
+     *
      * @see \Codeception\Lib\InnerBrowser::attachFile()
      */
     public function attachFile($field, string $filename): void
@@ -959,9 +995,10 @@ trait AcceptanceTesterActions
      *
      * Sends an ajax GET request with the passed parameters.
      * See `sendAjaxPostRequest()`
+     *
      * @see \Codeception\Lib\InnerBrowser::sendAjaxGetRequest()
      */
-    public function sendAjaxGetRequest(string $uri, array $params = array()): void
+    public function sendAjaxGetRequest(string $uri, array $params = []): void
     {
         $this->getScenario()->runStep(new Action('sendAjaxGetRequest', func_get_args()));
     }
@@ -987,9 +1024,10 @@ trait AcceptanceTesterActions
      *     'category' => 'miscellaneous',
      * ]]);
      * ```
+     *
      * @see \Codeception\Lib\InnerBrowser::sendAjaxPostRequest()
      */
-    public function sendAjaxPostRequest(string $uri, array $params = array()): void
+    public function sendAjaxPostRequest(string $uri, array $params = []): void
     {
         $this->getScenario()->runStep(new Action('sendAjaxPostRequest', func_get_args()));
     }
@@ -1004,9 +1042,10 @@ trait AcceptanceTesterActions
      * <?php
      * $I->sendAjaxRequest('PUT', '/posts/7', ['title' => 'new title']);
      * ```
+     *
      * @see \Codeception\Lib\InnerBrowser::sendAjaxRequest()
      */
-    public function sendAjaxRequest(string $method, string $uri, array $params = array()): void
+    public function sendAjaxRequest(string $method, string $uri, array $params = []): void
     {
         $this->getScenario()->runStep(new Action('sendAjaxRequest', func_get_args()));
     }
@@ -1023,6 +1062,7 @@ trait AcceptanceTesterActions
      * $I->makeHtmlSnapshot();
      * // saved to: tests/_output/debug/2017-05-26_14-24-11_4b3403665fea6.html
      * ```
+     *
      * @see \Codeception\Lib\InnerBrowser::makeHtmlSnapshot()
      */
     public function makeHtmlSnapshot(?string $name = null): void
@@ -1043,6 +1083,7 @@ trait AcceptanceTesterActions
      * $heading = $I->grabTextFrom('descendant-or-self::h1');
      * $value = $I->grabTextFrom('~<input value=(.*?)]~sgi'); // match with a regex
      * ```
+     *
      * @see \Codeception\Lib\InnerBrowser::grabTextFrom()
      */
     public function grabTextFrom($cssOrXPathOrRegex): mixed
@@ -1060,6 +1101,7 @@ trait AcceptanceTesterActions
      * <?php
      * $I->grabAttributeFrom('#tooltip', 'title');
      * ```
+     *
      * @see \Codeception\Lib\InnerBrowser::grabAttributeFrom()
      */
     public function grabAttributeFrom($cssOrXpath, string $attribute): mixed
@@ -1089,6 +1131,7 @@ trait AcceptanceTesterActions
      * ```
      *
      * @return string[]
+     *
      * @see \Codeception\Lib\InnerBrowser::grabMultiple()
      */
     public function grabMultiple($cssOrXpath, ?string $attribute = null): array
@@ -1109,6 +1152,7 @@ trait AcceptanceTesterActions
      * $name = $I->grabValueFrom('descendant-or-self::form/descendant::input[@name = 'username']');
      * $name = $I->grabValueFrom(['name' => 'username']);
      * ```
+     *
      * @see \Codeception\Lib\InnerBrowser::grabValueFrom()
      */
     public function grabValueFrom($field): mixed
@@ -1128,9 +1172,10 @@ trait AcceptanceTesterActions
      * ```
      *
      * @return mixed|void
+     *
      * @see \Codeception\Lib\InnerBrowser::setCookie()
      */
-    public function setCookie($name, $val, $params = array())
+    public function setCookie($name, $val, $params = [])
     {
         return $this->getScenario()->runStep(new Action('setCookie', func_get_args()));
     }
@@ -1141,9 +1186,10 @@ trait AcceptanceTesterActions
      * Grabs a cookie value.
      * You can set additional cookie params like `domain`, `path` in array passed as last argument.
      * If the cookie is set by an ajax request (XMLHttpRequest), there might be some delay caused by the browser, so try `$I->wait(0.1)`.
+     *
      * @see \Codeception\Lib\InnerBrowser::grabCookie()
      */
-    public function grabCookie(string $cookie, array $params = array()): mixed
+    public function grabCookie(string $cookie, array $params = []): mixed
     {
         return $this->getScenario()->runStep(new Action('grabCookie', func_get_args()));
     }
@@ -1154,7 +1200,9 @@ trait AcceptanceTesterActions
      * Grabs current page source code.
      *
      * @return string Current page source code.
+     *
      * @throws ModuleException if no page was opened.
+     *
      * @see \Codeception\Lib\InnerBrowser::grabPageSource()
      */
     public function grabPageSource(): string
@@ -1174,9 +1222,10 @@ trait AcceptanceTesterActions
      * ```
      *
      * @return mixed|void
+     *
      * @see \Codeception\Lib\InnerBrowser::seeCookie()
      */
-    public function seeCookie($cookie, $params = array())
+    public function seeCookie($cookie, $params = [])
     {
         return $this->getScenario()->runStep(new Assertion('seeCookie', func_get_args()));
     }
@@ -1188,9 +1237,10 @@ trait AcceptanceTesterActions
      * You can set additional cookie params like `domain`, `path` as array passed in last argument.
      *
      * @return mixed|void
+     *
      * @see \Codeception\Lib\InnerBrowser::dontSeeCookie()
      */
-    public function dontSeeCookie($cookie, $params = array())
+    public function dontSeeCookie($cookie, $params = [])
     {
         return $this->getScenario()->runStep(new Action('dontSeeCookie', func_get_args()));
     }
@@ -1202,9 +1252,10 @@ trait AcceptanceTesterActions
      * You can set additional cookie params like `domain`, `path` in array passed as last argument.
      *
      * @return mixed|void
+     *
      * @see \Codeception\Lib\InnerBrowser::resetCookie()
      */
-    public function resetCookie($cookie, $params = array())
+    public function resetCookie($cookie, $params = [])
     {
         return $this->getScenario()->runStep(new Action('resetCookie', func_get_args()));
     }
@@ -1225,9 +1276,10 @@ trait AcceptanceTesterActions
      * // strict locator in first arg, attributes in second
      * $I->seeElement(['css' => 'form input'], ['name' => 'login']);
      * ```
+     *
      * @see \Codeception\Lib\InnerBrowser::seeElement()
      */
-    public function seeElement($selector, array $attributes = array()): void
+    public function seeElement($selector, array $attributes = []): void
     {
         $this->getScenario()->runStep(new Assertion('seeElement', func_get_args()));
     }
@@ -1245,9 +1297,10 @@ trait AcceptanceTesterActions
      * $I->dontSeeElement('input', ['name' => 'login']);
      * $I->dontSeeElement('input', ['value' => '123456']);
      * ```
+     *
      * @see \Codeception\Lib\InnerBrowser::dontSeeElement()
      */
-    public function dontSeeElement($selector, array $attributes = array()): void
+    public function dontSeeElement($selector, array $attributes = []): void
     {
         $this->getScenario()->runStep(new Action('dontSeeElement', func_get_args()));
     }
@@ -1263,7 +1316,8 @@ trait AcceptanceTesterActions
      * $I->seeNumberOfElements('tr', [0,10]); // between 0 and 10 elements
      * ```
      *
-     * @param int|int[] $expected
+     * @param  int|int[]  $expected
+     *
      * @see \Codeception\Lib\InnerBrowser::seeNumberOfElements()
      */
     public function seeNumberOfElements($selector, $expected): void
@@ -1282,6 +1336,7 @@ trait AcceptanceTesterActions
      * ```
      *
      * @return mixed|void
+     *
      * @see \Codeception\Lib\InnerBrowser::seeOptionIsSelected()
      */
     public function seeOptionIsSelected($selector, $optionText)
@@ -1300,6 +1355,7 @@ trait AcceptanceTesterActions
      * ```
      *
      * @return mixed|void
+     *
      * @see \Codeception\Lib\InnerBrowser::dontSeeOptionIsSelected()
      */
     public function dontSeeOptionIsSelected($selector, $optionText)
@@ -1311,6 +1367,7 @@ trait AcceptanceTesterActions
      * [!] Method is generated. Documentation taken from corresponding module.
      *
      * Asserts that current page has 404 response status code.
+     *
      * @see \Codeception\Lib\InnerBrowser::seePageNotFound()
      */
     public function seePageNotFound(): void
@@ -1330,6 +1387,7 @@ trait AcceptanceTesterActions
      * // recommended \Codeception\Util\HttpCode
      * $I->seeResponseCodeIs(\Codeception\Util\HttpCode::OK);
      * ```
+     *
      * @see \Codeception\Lib\InnerBrowser::seeResponseCodeIs()
      */
     public function seeResponseCodeIs(int $code): void
@@ -1341,6 +1399,7 @@ trait AcceptanceTesterActions
      * [!] Method is generated. Documentation taken from corresponding module.
      *
      * Checks that response code is between a certain range. Between actually means [from <= CODE <= to]
+     *
      * @see \Codeception\Lib\InnerBrowser::seeResponseCodeIsBetween()
      */
     public function seeResponseCodeIsBetween(int $from, int $to): void
@@ -1360,6 +1419,7 @@ trait AcceptanceTesterActions
      * // recommended \Codeception\Util\HttpCode
      * $I->dontSeeResponseCodeIs(\Codeception\Util\HttpCode::OK);
      * ```
+     *
      * @see \Codeception\Lib\InnerBrowser::dontSeeResponseCodeIs()
      */
     public function dontSeeResponseCodeIs(int $code): void
@@ -1371,6 +1431,7 @@ trait AcceptanceTesterActions
      * [!] Method is generated. Documentation taken from corresponding module.
      *
      * Checks that the response code 2xx
+     *
      * @see \Codeception\Lib\InnerBrowser::seeResponseCodeIsSuccessful()
      */
     public function seeResponseCodeIsSuccessful(): void
@@ -1382,6 +1443,7 @@ trait AcceptanceTesterActions
      * [!] Method is generated. Documentation taken from corresponding module.
      *
      * Checks that the response code 3xx
+     *
      * @see \Codeception\Lib\InnerBrowser::seeResponseCodeIsRedirection()
      */
     public function seeResponseCodeIsRedirection(): void
@@ -1393,6 +1455,7 @@ trait AcceptanceTesterActions
      * [!] Method is generated. Documentation taken from corresponding module.
      *
      * Checks that the response code is 4xx
+     *
      * @see \Codeception\Lib\InnerBrowser::seeResponseCodeIsClientError()
      */
     public function seeResponseCodeIsClientError(): void
@@ -1404,6 +1467,7 @@ trait AcceptanceTesterActions
      * [!] Method is generated. Documentation taken from corresponding module.
      *
      * Checks that the response code is 5xx
+     *
      * @see \Codeception\Lib\InnerBrowser::seeResponseCodeIsServerError()
      */
     public function seeResponseCodeIsServerError(): void
@@ -1422,6 +1486,7 @@ trait AcceptanceTesterActions
      * ```
      *
      * @return mixed|void
+     *
      * @see \Codeception\Lib\InnerBrowser::seeInTitle()
      */
     public function seeInTitle($title)
@@ -1435,6 +1500,7 @@ trait AcceptanceTesterActions
      * Checks that the page title does not contain the given string.
      *
      * @return mixed|void
+     *
      * @see \Codeception\Lib\InnerBrowser::dontSeeInTitle()
      */
     public function dontSeeInTitle($title)
@@ -1457,6 +1523,7 @@ trait AcceptanceTesterActions
      * # switch to iframe
      * $I->switchToIframe("another_frame");
      * ```
+     *
      * @see \Codeception\Lib\InnerBrowser::switchToIframe()
      */
     public function switchToIframe(string $name): void
@@ -1469,7 +1536,8 @@ trait AcceptanceTesterActions
      *
      * Moves back in history.
      *
-     * @param int $numberOfSteps (default value 1)
+     * @param  int  $numberOfSteps (default value 1)
+     *
      * @see \Codeception\Lib\InnerBrowser::moveBack()
      */
     public function moveBack(int $numberOfSteps = 1): void
@@ -1486,6 +1554,7 @@ trait AcceptanceTesterActions
      * ```php
      * $I->setServerParameters([]);
      * ```
+     *
      * @see \Codeception\Lib\InnerBrowser::setServerParameters()
      */
     public function setServerParameters(array $params): void
@@ -1501,6 +1570,7 @@ trait AcceptanceTesterActions
      * ```php
      * $I->haveServerParameter('name', 'value');
      * ```
+     *
      * @see \Codeception\Lib\InnerBrowser::haveServerParameter()
      */
     public function haveServerParameter(string $name, string $value): void
@@ -1517,6 +1587,7 @@ trait AcceptanceTesterActions
      * <?php
      * $I->stopFollowingRedirects();
      * ```
+     *
      * @see \Codeception\Lib\InnerBrowser::stopFollowingRedirects()
      */
     public function stopFollowingRedirects(): void
@@ -1533,6 +1604,7 @@ trait AcceptanceTesterActions
      * <?php
      * $I->startFollowingRedirects();
      * ```
+     *
      * @see \Codeception\Lib\InnerBrowser::startFollowingRedirects()
      */
     public function startFollowingRedirects(): void
@@ -1549,6 +1621,7 @@ trait AcceptanceTesterActions
      * <?php
      * $I->followRedirect();
      * ```
+     *
      * @see \Codeception\Lib\InnerBrowser::followRedirect()
      */
     public function followRedirect(): void
@@ -1565,6 +1638,7 @@ trait AcceptanceTesterActions
      * <?php
      * $I->setMaxRedirects(2);
      * ```
+     *
      * @see \Codeception\Lib\InnerBrowser::setMaxRedirects()
      */
     public function setMaxRedirects(int $maxRedirects): void

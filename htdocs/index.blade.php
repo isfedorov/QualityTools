@@ -1,5 +1,4 @@
 @extends('partials.layout')
-
 @section('content')
     @include('partials.header')
 

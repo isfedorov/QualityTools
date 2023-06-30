@@ -1,4 +1,5 @@
 <?php
+
 //[STAMP] e9c950e9df1f947a38e0045b4d847c96
 
 namespace _generated;

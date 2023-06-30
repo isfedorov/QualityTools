@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.2/phpunit.xsd" beStrictAboutOutputDuringTests="true" failOnRisky="true" failOnWarning="true" colors="true">
+  <testsuites>
+    <testsuite name="subunit">
+      <directory>tests/PhpUnit</directory>
+    </testsuite>
+  </testsuites>
+  <coverage includeUncoveredFiles="true" pathCoverage="true" ignoreDeprecatedCodeUnits="true" disableCodeCoverageIgnore="true">
+    <report>
+      <clover outputFile="coverage/clover.xml"/>
+      <cobertura outputFile="coverage/cobertura.xml"/>
+      <crap4j outputFile="coverage/crap4j.xml" threshold="50"/>
+      <html outputDirectory="coverage" lowUpperBound="50" highLowerBound="90"/>
+      <php outputFile="coverage/coverage.php"/>
+      <text outputFile="coverage/coverage.txt" showUncoveredFiles="false" showOnlySummary="true"/>
+      <xml outputDirectory="coverage"/>
+    </report>
+  </coverage>
+  <source>
+    <include>
+      <directory suffix=".php">src</directory>
+    </include>
+  </source>
+</phpunit>

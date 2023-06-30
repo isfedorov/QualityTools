@@ -1,7 +1,6 @@
 {
   "require": {
     "php": "7.0",
-    "money/money": "@stable"
   },
   "require-dev": {
     "rector/rector": "@stable",

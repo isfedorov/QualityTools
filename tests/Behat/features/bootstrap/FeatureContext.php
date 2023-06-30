@@ -1,6 +1,8 @@
 <?php
 
 use Behat\Behat\Context\Context;
+use Behat\Step\Given;
+use Behat\Step\When;
 
 /**
  * Defines application features from the specific context.
@@ -8,7 +10,9 @@ use Behat\Behat\Context\Context;
 class FeatureContext implements Context
 {
     private $firstDigit;
+
     private $secondDigit;
+
     private $result;
 
     /**
@@ -23,17 +27,16 @@ class FeatureContext implements Context
     }
 
     /**
-     * @Given /^I have two numbers (\d+) and (\d+)$/
+     * comment
      */
+    #[Given('/^I have two numbers (\d+) and (\d+)$/')]
     public function iHaveTwoNumbersAnd($arg1, $arg2)
     {
-        $this->firstDigit = (int)$arg1;
-        $this->secondDigit = (int)$arg2;
+        $this->firstDigit = (int) $arg1;
+        $this->secondDigit = (int) $arg2;
     }
 
-    /**
-     * @When /^I add (\d+) to (\d+)$/
-     */
+    #[When('/^I add (\d+) to (\d+)$/')]
     public function iAddTo($arg1, $arg2)
     {
         $this->result = $this->firstDigit + $this->secondDigit;
@@ -44,8 +47,8 @@ class FeatureContext implements Context
      */
     public function iReceive($arg1)
     {
-        if ($this->result !== (int)$arg1) {
-            throw new Exception("Wrong result");
+        if ($this->result !== (int) $arg1) {
+            throw new Exception('Wrong result');
         }
     }
 }

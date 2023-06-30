@@ -15,15 +15,15 @@ class RoboFile extends Tasks
      * @return  void
      * @command greet
      */
-    public function getHello(ConsoleIO $io, $opts=['silent' => false])
+    public function getHello(ConsoleIO $io, $opts = array('silent' => false))
     {
-        $io->say("Hello, from Robo");
+        $io->say('Hello, from Robo');
     }
 
     public function example(): void
     {
         $this->taskExec('php')
-            ->args(['-v'])
+            ->args(array('-v'))
             ->run();
     }
 }

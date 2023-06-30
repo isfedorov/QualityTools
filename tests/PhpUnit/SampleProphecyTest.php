@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace QualityTools\General\Tests\PhpUnit;
@@ -11,9 +12,11 @@ use QualityTools\General\SimpleCalculator;
 class SampleProphecyTest extends TestCase
 {
     private $prophecy;
+
     private $prophet;
 
-    private const A =1;
+    private const A = 1;
+
     protected function setUp(): void
     {
         $this->prophet = new Prophet();
@@ -40,7 +43,7 @@ class DProvider
     {
         return [
             0 => [[1, 2, 3]],
-            1 => [[4, 5, 6]]
+            1 => [[4, 5, 6]],
         ];
     }
 }

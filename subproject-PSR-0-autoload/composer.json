@@ -4,28 +4,18 @@
       "\\": "src"
     }
   },
-  "autoload-dev": {
-    "psr-0": {
-      "SubProjectPSR0Autoload\\Tests\\Codeception\\": "tests/Codeception",
-      "SubProjectPSR0Autoload\\Tests\\PhpUnit\\": "tests/PhpUnit"
-    }
-  },
-  "require": {
-    "php": "7.4",
-    "money/money": "@stable"
-  },
   "require-dev": {
     "rector/rector": "@stable",
     "phing/phing": "@stable",
-    "phpunit/phpunit": "^10",
-    "mockery/mockery": "1.5.1",
+    "phpunit/phpunit": "@stable",
+    "mockery/mockery": "@stable",
     "behat/behat": "@stable",
     "squizlabs/php_codesniffer": "@stable",
     "phpmd/phpmd": "@stable",
     "friendsofphp/php-cs-fixer": "@stable",
-    "vimeo/psalm": "5.7.7",
+    "vimeo/psalm": "@stable",
     "phpstan/phpstan": "@stable",
-    "consolidation/robo": "4.0.3",
+    "consolidation/robo": "@stable",
     "symfony/var-dumper": "@stable",
     "phpspec/prophecy": "@stable"
   },

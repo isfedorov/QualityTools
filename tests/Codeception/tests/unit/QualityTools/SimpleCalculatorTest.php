@@ -13,9 +13,16 @@ class SimpleCalculatorTest extends Unit
     {
         self::assertEquals(1, $number);
     }
+
+    public function testExample(): void
+    {
+        // previous must be set
+        throw new \LogicException(previous: new \Exception());
+    }
 }
 
-class MyDataProvider {
+class MyDataProvider
+{
     public function getData(): array
     {
         return [0 => [1]];

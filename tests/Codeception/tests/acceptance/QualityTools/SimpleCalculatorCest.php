@@ -3,9 +3,9 @@
 namespace QualityTools\Tests\Codeception\tests\acceptance\QualityTools;
 
 use AcceptanceTester;
+use function PHPUnit\Framework\assertEquals;
 use Prophecy\Prophet;
 use QualityTools\General\SimpleCalculator;
-use function PHPUnit\Framework\assertEquals;
 
 class SimpleCalculatorCest
 {

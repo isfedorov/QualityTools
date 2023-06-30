@@ -4,5 +4,4 @@ namespace SubProjectPSR0Autoload\General;
 
 class AnotherClass
 {
-
 }

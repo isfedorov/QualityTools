@@ -4,5 +4,4 @@ namespace General;
 
 class AnotherClass
 {
-
 }

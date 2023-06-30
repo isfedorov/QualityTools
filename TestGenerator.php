@@ -1,16 +1,18 @@
 <?php
-for ($i = 1; $i <= 500; $i++) {
+
+for ($i = 1; $i <= 100; $i++) {
     $newFile = "tests/PhpUnit/Generated/Sample{$i}Test.php";
-    if (!file_exists("tests/PhpUnit/Generated")) {
-        mkdir("tests/PhpUnit/Generated");
+    if (!file_exists('tests/PhpUnit/Generated')) {
+        mkdir('tests/PhpUnit/Generated');
     }
     if (!file_exists($newFile)) {
         file_put_contents(
             $newFile,
             <<<EOF
 <?php
-namespace SubProjectPSR0Auto\General\Tests\PhpUnit\Generated;
-use SubProjectPSR0Auto\General\SimpleCalculator;
+namespace QualityTools\General\Tests\PhpUnit\Generated;
+use QualityTools\General\SimpleCalculator;
+use PHPUnit\Framework\TestCase;
 
 class Sample{$i}Test extends TestCase
 {
