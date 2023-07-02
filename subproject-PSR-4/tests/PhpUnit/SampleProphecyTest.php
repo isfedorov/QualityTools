@@ -3,10 +3,9 @@ declare(strict_types=1);
 
 namespace SubProjectPSR4\General\Tests\PhpUnit;
 
-use PHPUnit\Framework\Attributes\DataProviderExternal;
 use PHPUnit\Framework\TestCase;
 use Prophecy\Prophet;
-use QualityTools\General\SimpleCalculator;
+use SubProjectPSR4\General\SimpleCalculator;
 
 class SampleProphecyTest extends TestCase
 {
@@ -19,10 +18,12 @@ class SampleProphecyTest extends TestCase
         $this->prophet = new Prophet();
     }
 
-    #[DataProviderExternal(DProvider::class, 'provideArray')]
+    /**
+     * @dataProvider \SubProjectPSR4\General\Tests\PhpUnit\DProvider::provideArray
+     */
     public function testSumma($array)
     {
-        $this->prophecy = $this->prophet->prophesize(\QualityTools\General\ArrayProvider::class);
+        $this->prophecy = $this->prophet->prophesize(\SubProjectPSR4\General\ArrayProvider::class);
         $this->prophecy->getArray()->willReturn($array);
         $res = (new SimpleCalculator())->sumArrayElements($this->prophecy->reveal());
         static::assertEquals(15, $res);

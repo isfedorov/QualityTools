@@ -7,7 +7,9 @@ use PHPUnit\Framework\TestCase;
 
 class SimpleCalculatorTest extends TestCase
 {
-    #[DataProvider('provideArray')]
+    /**
+     * @dataProvider provideArray
+     */
     public function testArrayDataProvider($input)
     {
         self::assertEquals(1, $input);

@@ -5,19 +5,23 @@
     }
   },
   "require-dev": {
+    "php": "^7.4",
     "rector/rector": "@stable",
     "phing/phing": "@stable",
-    "phpunit/phpunit": "@stable",
-    "mockery/mockery": "@stable",
+    "consolidation/robo": "@stable",
+    "phpunit/phpunit": "^8",
+    "codeception/codeception": "@stable",
+    "codeception/module-asserts": "*",
     "behat/behat": "@stable",
+    "phpspec/phpspec": "^7.4",
+    "mockery/mockery": "@stable",
+    "phpspec/prophecy": "dev-master",
+    "brianium/paratest": "@stable",
     "squizlabs/php_codesniffer": "@stable",
     "phpmd/phpmd": "@stable",
     "friendsofphp/php-cs-fixer": "@stable",
     "vimeo/psalm": "@stable",
-    "phpstan/phpstan": "@stable",
-    "consolidation/robo": "@stable",
-    "symfony/var-dumper": "@stable",
-    "phpspec/prophecy": "@stable"
+    "phpstan/phpstan": "@stable"
   },
   "scripts": {
     "phpcs": "vendor/bin/phpcs src tests --standard=phpcs.xml",

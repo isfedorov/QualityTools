@@ -1,21 +1,21 @@
 {
-  "require": {
-    "php": "7.0",
-  },
   "require-dev": {
-    "rector/rector": "@stable",
+    "php": "^7.0",
     "phing/phing": "@stable",
-    "phpunit/phpunit": "^10",
-    "mockery/mockery": "1.5.1",
+    "consolidation/robo": "@stable",
+    "phpunit/phpunit": "^6",
+    "codeception/codeception": "@stable",
+    "codeception/module-asserts": "*",
     "behat/behat": "@stable",
+    "phpspec/phpspec": "^4.3",
+    "mockery/mockery": "@stable",
+    "phpspec/prophecy": "@stable",
+    "brianium/paratest": "@stable",
     "squizlabs/php_codesniffer": "@stable",
     "phpmd/phpmd": "@stable",
     "friendsofphp/php-cs-fixer": "@stable",
-    "vimeo/psalm": "5.7.7",
-    "phpstan/phpstan": "@stable",
-    "consolidation/robo": "4.0.3",
-    "symfony/var-dumper": "@stable",
-    "phpspec/prophecy": "@stable"
+    "vimeo/psalm": "@stable",
+    "phpstan/phpstan": "@stable"
   },
   "scripts": {
     "phpcs": "vendor/bin/phpcs src tests --standard=phpcs.xml",

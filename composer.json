@@ -28,7 +28,8 @@
     "phpmd/phpmd": "@stable",
     "friendsofphp/php-cs-fixer": "@stable",
     "vimeo/psalm": "@stable",
-    "phpstan/phpstan": "@stable"
+    "phpstan/phpstan": "@stable",
+    "laravel/framework": "@stable"
   },
   "scripts": {
     "phpcs": "vendor/bin/phpcs src tests --standard=phpcs.xml",

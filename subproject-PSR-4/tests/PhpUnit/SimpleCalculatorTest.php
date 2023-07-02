@@ -2,15 +2,15 @@
 
 namespace SubProjectPSR4\General\Tests\PhpUnit;
 
-use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
-use QualityTools\General\SimpleCalculator;
-use function chr;
+use SubProjectPSR4\General\SimpleCalculator;
 
 class SimpleCalculatorTest extends TestCase
 {
 
-    #[DataProvider('provideArray')]
+    /**
+     * @dataProvider provideArray
+     */
     public function testArrayDataProvider($array)
     {
         self::assertEquals(1, (new SimpleCalculator())->add($array, 0));

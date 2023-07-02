@@ -13,13 +13,14 @@ class SampleProphecyTest extends TestCase
     private $prophecy;
     private $prophet;
 
-    private const A =1;
-    protected function setUp(): void
+    protected function setUp()
     {
         $this->prophet = new Prophet();
     }
 
-    #[DataProviderExternal(DProvider::class, 'provideArray')]
+    /**
+     * @dataProvider \PhpUnit\DProvider::provideArray()
+     */
     public function testSumma($array)
     {
         $this->prophecy = $this->prophet->prophesize(\QualityTools\General\ArrayProvider::class);
@@ -28,7 +29,7 @@ class SampleProphecyTest extends TestCase
         static::assertEquals(15, $res);
     }
 
-    protected function tearDown(): void
+    protected function tearDown()
     {
         $this->prophet->checkPredictions();
     }

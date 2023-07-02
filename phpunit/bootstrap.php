@@ -1,4 +1,3 @@
 <?php
 
-include_once __DIR__. '/../vendor/autoload.php';
-include_once 'tests/MyClassTest.php';
+require __DIR__. '/../subproject-PSR-0-auto/vendor/autoload.php';
