@@ -1,5 +1,7 @@
 <?php
 
+namespace QualityTools\General\Tests\PhpUnit;
+
 use PHPUnit\Framework\Attributes\Group;
 use PHPUnit\Framework\Attributes\TestWith;
 use PHPUnit\Framework\TestCase;

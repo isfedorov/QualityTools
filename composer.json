@@ -18,6 +18,7 @@
     "phpunit/phpunit": "^10",
     "codeception/codeception": "@stable",
     "codeception/module-asserts": "*",
+    "codeception/module-phpbrowser": "*",
     "behat/behat": "@stable",
     "phpspec/phpspec": "^7.4",
     "mockery/mockery": "@stable",

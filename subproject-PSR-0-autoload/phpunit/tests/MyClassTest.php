@@ -1,11 +1,12 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
+use PHPUnit\Runner\Version;
 
 class MyClassTest extends TestCase
 {
-    public function testA()
+    public function testPhpUnitVersion()
     {
-        self::assertTrue(true);
+        self::assertEquals("8.5.33", Version::id());
     }
 }

@@ -1,8 +1,9 @@
 <?php
 
-namespace SubProjectPSR0Autoload\codeception\tests\functional\QualityTools;
+namespace SubProjectPSR0Autoload\Tests\Codeception\Functional;
 
 use FunctionalTester;
+use SubProjectPSR0Autoload\General\SimpleCalculator;
 
 class SimpleCalculatorCest
 {
@@ -13,6 +14,7 @@ class SimpleCalculatorCest
     // tests
     public function tryToAdd(FunctionalTester $I)
     {
+        $I->seeEqualNumbers(2, (new SimpleCalculator())->add(1, 1));
     }
 
     public function tryToRemove(FunctionalTester $I)

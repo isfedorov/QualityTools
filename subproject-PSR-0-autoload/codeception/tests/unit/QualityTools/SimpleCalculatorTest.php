@@ -1,23 +1,17 @@
 <?php
 
-namespace QualityTools\Tests\Codeception\tests\unit\QualityTools;
+namespace SubProjectPSR0Autoload\Tests\Codeception\Unit;
 
 use Codeception\Test\Unit;
 
 class SimpleCalculatorTest extends Unit
 {
     /**
-     * @dataProvider \QualityTools\Tests\Codeception\tests\unit\QualityTools\MyDataProvider::getData
+     * @dataProvider \SubProjectPSR0Autoload\Tests\Codeception\Unit\MyDataProvider::getData
      */
     public function testAddition($number)
     {
         self::assertEquals(1, $number);
-    }
-
-    public function testExample(): void
-    {
-        // previous must be set
-        throw new \LogicException(previous: new \Exception());
     }
 }
 

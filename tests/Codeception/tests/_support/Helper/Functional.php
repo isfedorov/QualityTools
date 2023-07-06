@@ -9,4 +9,8 @@ use Codeception\Module;
 
 class Functional extends Module
 {
+    public function seeEqualNumbers($a, $b)
+    {
+        $this->assertEquals($a, $b);
+    }
 }

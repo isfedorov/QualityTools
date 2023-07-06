@@ -1,6 +1,6 @@
 <?php
 
-namespace SubProjectPSR4\Tests\Codeception\tests\acceptance\SubProjectPSR4;
+namespace SubProjectPSR4\Tests\Codeception\Acceptance;
 
 use AcceptanceTester;
 use function PHPUnit\Framework\assertEquals;
@@ -17,7 +17,7 @@ class SimpleCalculatorCest
     // tests
     public function tryToAdd(AcceptanceTester $I)
     {
-        assertEquals(2, (new SimpleCalculator())->add(1, 1));
+        $I->seeEqualNumbers(2, (new SimpleCalculator())->add(1, 1));
     }
 
     // tests

@@ -1,4 +1,4 @@
 <?php
 
-include_once __DIR__ . '/../vendor/autoload.php';
-include_once __DIR__ . '/tests/MyClassTest.php';
+require __DIR__ . '/../vendor/autoload.php';
+require __DIR__ . '/tests/BaseCalculatorTest.php';

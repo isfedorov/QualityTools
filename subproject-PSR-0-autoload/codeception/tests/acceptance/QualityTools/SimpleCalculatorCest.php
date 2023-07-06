@@ -1,11 +1,10 @@
 <?php
 
-namespace QualityTools\Tests\Codeception\tests\acceptance\QualityTools;
+namespace SubProjectPSR0Autoload\Tests\Codeception\Acceptance;
 
 use AcceptanceTester;
-use function PHPUnit\Framework\assertEquals;
 use Prophecy\Prophet;
-use QualityTools\General\SimpleCalculator;
+use SubProjectPSR0Autoload\General\SimpleCalculator;
 
 class SimpleCalculatorCest
 {
@@ -17,7 +16,7 @@ class SimpleCalculatorCest
     // tests
     public function tryToAdd(AcceptanceTester $I)
     {
-        assertEquals(2, (new SimpleCalculator())->add(1, 1));
+        $I->seeEqualNumbers(2, (new SimpleCalculator())->add(1, 1));
     }
 
     // tests

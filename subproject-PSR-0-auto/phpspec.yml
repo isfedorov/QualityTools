@@ -1,0 +1,5 @@
+suites:
+  quality_tools_suite:
+    namespace: SubProjectPSR0Auto\General
+    spec_prefix:
+    spec_path: 'spec'

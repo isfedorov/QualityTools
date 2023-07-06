@@ -27,16 +27,17 @@ class FeatureContext implements Context
     }
 
     /**
-     * comment
+     * @Given /^I have two numbers (\d+) and (\d+)$/
      */
-    #[Given('/^I have two numbers (\d+) and (\d+)$/')]
     public function iHaveTwoNumbersAnd($arg1, $arg2)
     {
         $this->firstDigit = (int) $arg1;
         $this->secondDigit = (int) $arg2;
     }
 
-    #[When('/^I add (\d+) to (\d+)$/')]
+    /**
+     * @When /^I add (\d+) to (\d+)$/
+     */
     public function iAddTo($arg1, $arg2)
     {
         $this->result = $this->firstDigit + $this->secondDigit;
