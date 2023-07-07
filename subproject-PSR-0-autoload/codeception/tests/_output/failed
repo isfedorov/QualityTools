@@ -1,1 +1,1 @@
-codeception/tests/functional/QualityTools/SimpleCalculatorCest.php:tryToAdd
+codeception/tests/acceptance/QualityTools/SimpleCalculatorCest.php:tryToAdd

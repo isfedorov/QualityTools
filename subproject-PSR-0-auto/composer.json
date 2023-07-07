@@ -11,7 +11,6 @@
     "phpspec/phpspec": "@stable",
     "mockery/mockery": "@stable",
     "phpspec/prophecy": "@stable",
-    "brianium/paratest": "@stable",
     "squizlabs/php_codesniffer": "@stable",
     "phpmd/phpmd": "@stable",
     "friendsofphp/php-cs-fixer": "@stable",

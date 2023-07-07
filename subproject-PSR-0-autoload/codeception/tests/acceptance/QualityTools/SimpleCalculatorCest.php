@@ -18,9 +18,4 @@ class SimpleCalculatorCest
     {
         $I->seeEqualNumbers(2, (new SimpleCalculator())->add(1, 1));
     }
-
-    // tests
-    public function tryToRemove(AcceptanceTester $I)
-    {
-    }
 }

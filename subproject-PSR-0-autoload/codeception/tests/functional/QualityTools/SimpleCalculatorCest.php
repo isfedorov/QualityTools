@@ -16,8 +16,4 @@ class SimpleCalculatorCest
     {
         $I->seeEqualNumbers(2, (new SimpleCalculator())->add(1, 1));
     }
-
-    public function tryToRemove(FunctionalTester $I)
-    {
-    }
 }

@@ -17,11 +17,6 @@ class SimpleCalculatorCest
     // tests
     public function tryToAdd(AcceptanceTester $I)
     {
-        $I->seeEqualNumbers(2, (new SimpleCalculator())->add(1, 1));
-    }
-
-    // tests
-    public function tryToRemove(AcceptanceTester $I)
-    {
+        $I->seeEqualNumbers(3, (new SimpleCalculator())->add(1, 1));
     }
 }

@@ -8,14 +8,9 @@ class SimpleCalculatorCest
     {
     }
 
-    // tests
-    public function tryToTest(AcceptanceTester $I)
-    {
-    }
-
     public function tryToAdd(AcceptanceTester $I)
     {
-
+        $I->seeEqualNumbers(2, (new SimpleCalculator())->add(1, 1));
     }
 
 }

@@ -3,7 +3,6 @@
 namespace SubProjectPSR4\General;
 
 use PhpSpec\ObjectBehavior;
-use SubProjectPSR4\General\SimpleCalculator;
 
 class SimpleCalculatorSpec extends ObjectBehavior
 {

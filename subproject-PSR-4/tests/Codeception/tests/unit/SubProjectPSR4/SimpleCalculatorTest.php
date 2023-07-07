@@ -11,7 +11,7 @@ class SimpleCalculatorTest extends Unit
      */
     public function testAddition($number)
     {
-        self::assertEquals(1, $number);
+        self::assertEquals(2, $number);
     }
 }
 
