@@ -8,7 +8,7 @@ class SimpleCalculatorTest extends \Codeception\Test\Unit
      * @var \UnitTester
      */
     protected $tester;
-    
+
     protected function _before()
     {
     }
@@ -20,6 +20,6 @@ class SimpleCalculatorTest extends \Codeception\Test\Unit
     // tests
     public function testSomeFeature()
     {
-        self::assertEquals("6.5.14", Version::id());
+        self::assertEquals("6.5.15", Version::id());
     }
 }
