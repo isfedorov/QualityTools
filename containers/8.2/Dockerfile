@@ -2,7 +2,8 @@ FROM php:8.2.0-apache
 RUN echo 'memory_limit = 2048M' >> /usr/local/etc/php/conf.d/docker-php-memlimit.ini
 COPY --from=composer /usr/bin/composer /usr/bin/composer
 ENV DEBIAN_FRONTEND=noninteractive
-RUN apt-get update && apt-get -y install software-properties-common openssh-server sudo git libzip-dev zip libicu-dev unzip apache2 apache2-utils ssl-cert iputils-ping
+RUN apt-get update && apt-get -y install software-properties-common openssh-server sudo git libzip-dev zip libicu-dev \
+    unzip apache2 apache2-utils ssl-cert iputils-ping
 RUN docker-php-ext-install mysqli zip intl
 RUN pecl install xdebug
 RUN docker-php-ext-enable xdebug

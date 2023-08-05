@@ -10,8 +10,10 @@
       "QualityTools\\General\\Tests\\PhpUnit\\": "tests/PhpUnit/"
     }
   },
+  "require": {
+    "php": "^8.2"
+  },
   "require-dev": {
-    "php": "^8.2",
     "rector/rector": "@stable",
     "phing/phing": "@stable",
     "consolidation/robo": "@stable",
