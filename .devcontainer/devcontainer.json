@@ -1,7 +1,4 @@
 {
 	"name": "QualityTools",
-	"build" : {
-		"dockerfile": "../containers/8.1/Dockerfile",
-		"context": ".."
-	}
+	"image": "php:latest"
 }
