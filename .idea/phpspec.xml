@@ -12,16 +12,22 @@
         <option name="myPath" value="$PROJECT_DIR$" />
       </PhpSpecSuiteConfiguration>
       <PhpSpecSuiteConfiguration>
+        <option name="myPath" value="$PROJECT_DIR$" />
+      </PhpSpecSuiteConfiguration>
+      <PhpSpecSuiteConfiguration>
+        <option name="myPath" value="$PROJECT_DIR$/subproject-PSR-4" />
+      </PhpSpecSuiteConfiguration>
+      <PhpSpecSuiteConfiguration>
         <option name="myPath" value="$PROJECT_DIR$/subproject-PSR-0-autoload" />
+      </PhpSpecSuiteConfiguration>
+      <PhpSpecSuiteConfiguration>
+        <option name="myPath" value="$PROJECT_DIR$/subproject-PSR-4" />
       </PhpSpecSuiteConfiguration>
       <PhpSpecSuiteConfiguration>
         <option name="myPath" value="$PROJECT_DIR$" />
       </PhpSpecSuiteConfiguration>
       <PhpSpecSuiteConfiguration>
         <option name="myPath" value="$PROJECT_DIR$/subproject-PSR-0-auto" />
-      </PhpSpecSuiteConfiguration>
-      <PhpSpecSuiteConfiguration>
-        <option name="myPath" value="$PROJECT_DIR$/subproject-PSR-4" />
       </PhpSpecSuiteConfiguration>
     </suites>
   </component>
