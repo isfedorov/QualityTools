@@ -1,6 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="SimpleCalculatorTest.testAdd" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
-    <TestRunner class="QualityTools\Tests\PhpUnit\SimpleCalculatorTest" configuration_file="/opt/project/phpunit.xml.dist" file="$PROJECT_DIR$/tests/PhpUnit/SimpleCalculatorTest.php" method="testAdd" scope="Method" />
-    <method v="2" />
-  </configuration>
-</component>

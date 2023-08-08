@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Codeception">
+    <option name="configurations">
+      <list>
+        <Configuration>
+          <option name="path" value="$PROJECT_DIR$/subproject-PSR-0-autoload/codeception/tests" />
+        </Configuration>
+        <Configuration>
+          <option name="path" value="$PROJECT_DIR$/tests/Codeception/tests" />
+        </Configuration>
+        <Configuration>
+          <option name="path" value="$PROJECT_DIR$/subproject-PSR-0-auto/codeception/tests" />
+        </Configuration>
+        <Configuration>
+          <option name="path" value="$PROJECT_DIR$/subproject-PSR-4/tests/Codeception/tests" />
+        </Configuration>
+      </list>
+    </option>
+  </component>
+</project>

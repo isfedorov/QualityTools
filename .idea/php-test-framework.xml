@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PhpTestFrameworkSettings">
+    <test_tools>
+      <tool tool_name="Behat">
+        <settings>
+          <configurations>
+            <local_configuration configuration_file_path="$PROJECT_DIR$/subproject-PSR-0-autoload/behat.yml" executable_path="$PROJECT_DIR$/subproject-PSR-0-autoload/vendor/behat/behat/bin/behat" use_configuration_file="true" />
+            <local_configuration configuration_file_path="$PROJECT_DIR$/subproject-PSR-0-auto/behat.yml" executable_path="$PROJECT_DIR$/subproject-PSR-0-auto/vendor/behat/behat/bin/behat" use_configuration_file="true" />
+            <local_configuration configuration_file_path="$PROJECT_DIR$/behat.yml" executable_path="$PROJECT_DIR$/vendor/behat/behat/bin/behat" use_configuration_file="true" />
+          </configurations>
+        </settings>
+      </tool>
+      <tool tool_name="Codeception">
+        <settings>
+          <configurations>
+            <local_configuration configuration_file_path="$PROJECT_DIR$/subproject-PSR-0-autoload/codeception.yml" executable_path="$PROJECT_DIR$/subproject-PSR-0-autoload/vendor/codeception/codeception/codecept" use_configuration_file="true" />
+            <local_configuration configuration_file_path="$PROJECT_DIR$/subproject-PSR-0-auto/codeception.yml" executable_path="$PROJECT_DIR$/subproject-PSR-0-auto/vendor/codeception/codeception/codecept" use_configuration_file="true" />
+            <local_configuration configuration_file_path="$PROJECT_DIR$/codeception.yml" executable_path="$PROJECT_DIR$/vendor/codeception/codeception/codecept" use_configuration_file="true" />
+          </configurations>
+        </settings>
+      </tool>
+      <tool tool_name="PHPSpec">
+        <settings>
+          <configurations>
+            <local_configuration configuration_file_path="$PROJECT_DIR$/subproject-PSR-0-autoload/phpspec.yml" executable_path="$PROJECT_DIR$/subproject-PSR-0-autoload/vendor/phpspec/phpspec/bin/phpspec" use_configuration_file="true" />
+            <local_configuration configuration_file_path="$PROJECT_DIR$/subproject-PSR-4/phpspec.yml" executable_path="$PROJECT_DIR$/subproject-PSR-4/vendor/phpspec/phpspec/bin/phpspec" use_configuration_file="true" />
+            <local_configuration configuration_file_path="$PROJECT_DIR$/subproject-PSR-0-auto/phpspec.yml" executable_path="$PROJECT_DIR$/subproject-PSR-0-auto/vendor/phpspec/phpspec/bin/phpspec" use_configuration_file="true" />
+            <local_configuration configuration_file_path="$PROJECT_DIR$/phpspec.yml" executable_path="$PROJECT_DIR$/vendor/phpspec/phpspec/bin/phpspec" use_configuration_file="true" />
+          </configurations>
+        </settings>
+      </tool>
+    </test_tools>
+  </component>
+</project>

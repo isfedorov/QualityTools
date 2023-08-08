@@ -1,6 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="TestSubstruction" type="CodeceptionConfigurationType" factoryName="Codeception">
-    <PhpTestRunnerSettings file="$PROJECT_DIR$/tests/Codeception/tests/unit/QualityTools/SimpleCalculatorTest.php" method="testSubstraction" scope="Method" />
-    <method v="2" />
-  </configuration>
-</component>
