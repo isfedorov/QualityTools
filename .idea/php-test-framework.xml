@@ -6,6 +6,7 @@
         <settings>
           <configurations>
             <local_configuration configuration_file_path="$PROJECT_DIR$/subproject-PSR-0-autoload/behat.yml" executable_path="$PROJECT_DIR$/subproject-PSR-0-autoload/vendor/behat/behat/bin/behat" use_configuration_file="true" />
+            <local_configuration configuration_file_path="$PROJECT_DIR$/subproject-PSR-4/behat.yml" executable_path="$PROJECT_DIR$/subproject-PSR-4/vendor/behat/behat/bin/behat" use_configuration_file="true" />
             <local_configuration configuration_file_path="$PROJECT_DIR$/subproject-PSR-0-auto/behat.yml" executable_path="$PROJECT_DIR$/subproject-PSR-0-auto/vendor/behat/behat/bin/behat" use_configuration_file="true" />
             <local_configuration configuration_file_path="$PROJECT_DIR$/behat.yml" executable_path="$PROJECT_DIR$/vendor/behat/behat/bin/behat" use_configuration_file="true" />
           </configurations>
@@ -15,6 +16,7 @@
         <settings>
           <configurations>
             <local_configuration configuration_file_path="$PROJECT_DIR$/subproject-PSR-0-autoload/codeception.yml" executable_path="$PROJECT_DIR$/subproject-PSR-0-autoload/vendor/codeception/codeception/codecept" use_configuration_file="true" />
+            <local_configuration configuration_file_path="$PROJECT_DIR$/subproject-PSR-4/codeception.yml" executable_path="$PROJECT_DIR$/subproject-PSR-4/vendor/codeception/codeception/codecept" use_configuration_file="true" />
             <local_configuration configuration_file_path="$PROJECT_DIR$/subproject-PSR-0-auto/codeception.yml" executable_path="$PROJECT_DIR$/subproject-PSR-0-auto/vendor/codeception/codeception/codecept" use_configuration_file="true" />
             <local_configuration configuration_file_path="$PROJECT_DIR$/codeception.yml" executable_path="$PROJECT_DIR$/vendor/codeception/codeception/codecept" use_configuration_file="true" />
           </configurations>
@@ -31,5 +33,16 @@
         </settings>
       </tool>
     </test_tools>
+  </component>
+  <component name="PhpTestFrameworkVersionCache">
+    <tools_cache>
+      <tool tool_name="PHPUnit">
+        <cache>
+          <versions>
+            <info id="Local/Users/ivan.fedorov/PhpstormProjects/QualityTools/vendor/autoload.php" version="10.3.1" />
+          </versions>
+        </cache>
+      </tool>
+    </tools_cache>
   </component>
 </project>

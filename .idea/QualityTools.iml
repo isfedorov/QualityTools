@@ -23,6 +23,7 @@
       <sourceFolder url="file://$MODULE_DIR$/tests/Codeception" isTestSource="true" packagePrefix="QualityTools\General\Tests\Codeception\" />
       <sourceFolder url="file://$MODULE_DIR$/tests/Codeception/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/tests/PhpUnit" isTestSource="true" packagePrefix="QualityTools\General\Tests\PhpUnit\" />
+      <excludeFolder url="file://$MODULE_DIR$/extensions/Example/vendor/composer" />
       <excludeFolder url="file://$MODULE_DIR$/subproject-PSR-0-auto/vendor/behat/behat" />
       <excludeFolder url="file://$MODULE_DIR$/subproject-PSR-0-auto/vendor/behat/gherkin" />
       <excludeFolder url="file://$MODULE_DIR$/subproject-PSR-0-auto/vendor/behat/transliterator" />
@@ -483,6 +484,44 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/vlucas/phpdotenv" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/voku/portable-ascii" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/webmozart/assert" />
+      <excludeFolder url="file://$MODULE_DIR$/subproject-PSR-4/vendor/amphp/amp" />
+      <excludeFolder url="file://$MODULE_DIR$/subproject-PSR-4/vendor/amphp/byte-stream" />
+      <excludeFolder url="file://$MODULE_DIR$/subproject-PSR-4/vendor/behat/behat" />
+      <excludeFolder url="file://$MODULE_DIR$/subproject-PSR-4/vendor/behat/gherkin" />
+      <excludeFolder url="file://$MODULE_DIR$/subproject-PSR-4/vendor/behat/transliterator" />
+      <excludeFolder url="file://$MODULE_DIR$/subproject-PSR-4/vendor/codeception/codeception" />
+      <excludeFolder url="file://$MODULE_DIR$/subproject-PSR-4/vendor/codeception/lib-asserts" />
+      <excludeFolder url="file://$MODULE_DIR$/subproject-PSR-4/vendor/codeception/lib-innerbrowser" />
+      <excludeFolder url="file://$MODULE_DIR$/subproject-PSR-4/vendor/codeception/lib-web" />
+      <excludeFolder url="file://$MODULE_DIR$/subproject-PSR-4/vendor/codeception/module-asserts" />
+      <excludeFolder url="file://$MODULE_DIR$/subproject-PSR-4/vendor/codeception/module-phpbrowser" />
+      <excludeFolder url="file://$MODULE_DIR$/subproject-PSR-4/vendor/codeception/stub" />
+      <excludeFolder url="file://$MODULE_DIR$/subproject-PSR-4/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/subproject-PSR-4/vendor/dnoegel/php-xdg-base-dir" />
+      <excludeFolder url="file://$MODULE_DIR$/subproject-PSR-4/vendor/felixfbecker/advanced-json-rpc" />
+      <excludeFolder url="file://$MODULE_DIR$/subproject-PSR-4/vendor/felixfbecker/language-server-protocol" />
+      <excludeFolder url="file://$MODULE_DIR$/subproject-PSR-4/vendor/fidry/cpu-core-counter" />
+      <excludeFolder url="file://$MODULE_DIR$/subproject-PSR-4/vendor/friendsofphp/php-cs-fixer" />
+      <excludeFolder url="file://$MODULE_DIR$/subproject-PSR-4/vendor/guzzlehttp/guzzle" />
+      <excludeFolder url="file://$MODULE_DIR$/subproject-PSR-4/vendor/guzzlehttp/promises" />
+      <excludeFolder url="file://$MODULE_DIR$/subproject-PSR-4/vendor/guzzlehttp/psr7" />
+      <excludeFolder url="file://$MODULE_DIR$/subproject-PSR-4/vendor/hamcrest/hamcrest-php" />
+      <excludeFolder url="file://$MODULE_DIR$/subproject-PSR-4/vendor/league/container" />
+      <excludeFolder url="file://$MODULE_DIR$/subproject-PSR-4/vendor/mockery/mockery" />
+      <excludeFolder url="file://$MODULE_DIR$/subproject-PSR-4/vendor/myclabs/deep-copy" />
+      <excludeFolder url="file://$MODULE_DIR$/subproject-PSR-4/vendor/nikic/php-parser" />
+      <excludeFolder url="file://$MODULE_DIR$/subproject-PSR-4/vendor/phootwork/collection" />
+      <excludeFolder url="file://$MODULE_DIR$/subproject-PSR-4/vendor/phootwork/lang" />
+      <excludeFolder url="file://$MODULE_DIR$/subproject-PSR-4/vendor/phpdocumentor/reflection-common" />
+      <excludeFolder url="file://$MODULE_DIR$/subproject-PSR-4/vendor/phpdocumentor/reflection-docblock" />
+      <excludeFolder url="file://$MODULE_DIR$/subproject-PSR-4/vendor/phpdocumentor/type-resolver" />
+      <excludeFolder url="file://$MODULE_DIR$/subproject-PSR-4/vendor/phpowermove/docblock" />
+      <excludeFolder url="file://$MODULE_DIR$/subproject-PSR-4/vendor/phpstan/phpdoc-parser" />
+      <excludeFolder url="file://$MODULE_DIR$/subproject-PSR-4/vendor/phpstan/phpstan" />
+      <excludeFolder url="file://$MODULE_DIR$/subproject-PSR-4/vendor/psy/psysh" />
+      <excludeFolder url="file://$MODULE_DIR$/subproject-PSR-4/vendor/ralouphie/getallheaders" />
+      <excludeFolder url="file://$MODULE_DIR$/subproject-PSR-4/vendor/theseer/tokenizer" />
+      <excludeFolder url="file://$MODULE_DIR$/subproject-PSR-4/vendor/vimeo/psalm" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
