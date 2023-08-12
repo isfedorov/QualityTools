@@ -1,14 +1,22 @@
-FROM php:8.2.0-apache
+FROM php:8.3-rc-apache
 RUN echo 'memory_limit = 2048M' >> /usr/local/etc/php/conf.d/docker-php-memlimit.ini
 COPY --from=composer /usr/bin/composer /usr/bin/composer
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt-get -y install software-properties-common openssh-server sudo git libzip-dev zip libicu-dev \
     unzip apache2 apache2-utils ssl-cert iputils-ping
 RUN docker-php-ext-install mysqli zip intl
-RUN pecl install xdebug
-RUN docker-php-ext-enable xdebug
 RUN useradd -rm -d /home/jetbrains -s /bin/bash -g root -G sudo -u 1000 jetbrains
 RUN  echo 'jetbrains:jetbrains' | chpasswd
+RUN apt-get update -y && \
+    apt-get install git -y && \
+    git clone https://github.com/xdebug/xdebug
+WORKDIR xdebug
+RUN phpize && \
+    chmod +x configure && \
+    ./configure --enable-xdebug && \
+    make && \
+    make install
+RUN echo "zend_extension=$(php-config --extension-dir)/xdebug.so" >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
 RUN echo "xdebug.mode=develop,debug,coverage" >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
 #RUN echo "xdebug.remote_host=192.168.178.178" >> /usr/local/etc/php/php.ini
 RUN echo "xdebug.client_host=host.docker.internal" >> /usr/local/etc/php/php.ini

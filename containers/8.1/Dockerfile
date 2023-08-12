@@ -12,7 +12,7 @@ RUN  echo 'jetbrains:jetbrains' | chpasswd
 RUN echo "xdebug.mode=develop,debug,coverage" >> /usr/local/etc/php/php.ini
 #RUN echo "xdebug.remote_host=192.168.178.178" >> /usr/local/etc/php/php.ini
 RUN echo "xdebug.client_host=host.docker.internal" >> /usr/local/etc/php/php.ini
-#RUN echo "xdebug.start_with_request=yes" >> /usr/local/etc/php/php.ini
+RUN echo "xdebug.start_with_request=yes" >> /usr/local/etc/php/php.ini
 RUN echo "xdebug.output_dir=/opt/project/xdebug_snapshots" >> /usr/local/etc/php/php.ini
 RUN echo "xdebug.log=/opt/project/xdebug_logs/xdebug31php81.log" >> /usr/local/etc/php/php.ini
 #RUN echo "xdebug.log_level=11" >> /usr/local/etc/php/php.ini

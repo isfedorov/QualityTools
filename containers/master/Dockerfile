@@ -69,8 +69,6 @@ RUN phpize && \
     make install
 # Enable xdebug extension
 RUN echo "zend_extension=$(php-config --extension-dir)/xdebug.so" >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
-#RUN pecl install xdebug
-#RUN docker-php-ext-enable xdebug
 RUN echo "xdebug.mode=develop,debug,coverage" >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
 #RUN echo "xdebug.remote_host=192.168.178.178" >> /usr/local/etc/php/php.ini
 RUN echo "xdebug.client_host=host.docker.internal" >> /usr/local/etc/php/php.ini
