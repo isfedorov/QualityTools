@@ -14,3 +14,4 @@ phing-latest.phar
 tests/Codeception/tests/_output
 *.log
 .vscode/
+coverage

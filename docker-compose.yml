@@ -192,6 +192,30 @@ services:
     ports:
       - "4580:80"
       - "4522:22"
+  php_83_run:
+    build:
+      context: .
+      dockerfile: ./containers/8.3/Dockerfile
+    volumes:
+      - .:/opt/project
+      - ~/Documents/Deployment/SFTP:/home/jetbrains
+      - ~/.ssh/id_rsa.pub:/home/jetbrains/.ssh/keys/id_rsa.pub:ro
+      - ./htdocs:/var/www/html
+    ports:
+      - "4680:80"
+      - "4622:22"
+  php_83_exec:
+    build:
+      context: .
+      dockerfile: ./containers/8.3/Dockerfile
+    volumes:
+      - .:/opt/project
+      - ~/Documents/Deployment/SFTP:/home/jetbrains
+      - ~/.ssh/id_rsa.pub:/home/jetbrains/.ssh/keys/id_rsa.pub:ro
+      - ./htdocs:/var/www/html
+    ports:
+      - "4780:80"
+      - "4722:22"
   php_master:
     build:
       context: .
