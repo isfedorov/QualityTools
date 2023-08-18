@@ -1,4 +1,4 @@
 {
 	"name": "QualityTools",
-	"image": "php:latest"
+	"image": "mcr.microsoft.com/devcontainers/php"
 }
