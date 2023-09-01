@@ -1,9 +1,9 @@
-FROM php:8.3-rc-apache
+FROM php:8.3.0beta3-apache
 RUN echo 'memory_limit = 2048M' >> /usr/local/etc/php/conf.d/docker-php-memlimit.ini
 COPY --from=composer /usr/bin/composer /usr/bin/composer
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt-get -y install software-properties-common openssh-server sudo git libzip-dev zip libicu-dev \
-    unzip apache2 apache2-utils ssl-cert iputils-ping
+    unzip apache2 apache2-utils ssl-cert iputils-ping rsync wget
 RUN docker-php-ext-install mysqli zip intl
 RUN useradd -rm -d /home/jetbrains -s /bin/bash -g root -G sudo -u 1000 jetbrains
 RUN  echo 'jetbrains:jetbrains' | chpasswd

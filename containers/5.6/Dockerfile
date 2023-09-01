@@ -5,7 +5,8 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN sed -i -e 's/deb.debian.org/archive.debian.org/g' \
            -e 's|security.debian.org|archive.debian.org/|g' \
            -e '/stretch-updates/d' /etc/apt/sources.list
-RUN apt-get update && apt-get -y install software-properties-common openssh-server sudo libzip-dev libicu-dev git zip unzip apache2 apache2-utils ssl-cert
+RUN apt-get update && apt-get -y install software-properties-common openssh-server sudo libzip-dev libicu-dev git zip  \
+    unzip apache2 apache2-utils ssl-cert rsync wget
 RUN useradd -rm -d /home/jetbrains -s /bin/bash -g root -G sudo -u 1000 jetbrains
 RUN echo 'jetbrains:jetbrains' | chpasswd
 RUN docker-php-ext-install mysqli zip intl

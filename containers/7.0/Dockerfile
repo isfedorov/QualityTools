@@ -6,7 +6,8 @@ RUN sed -i -e 's/deb.debian.org/archive.debian.org/g' \
            -e 's|security.debian.org|archive.debian.org/|g' \
            -e '/stretch-updates/d' /etc/apt/sources.list
 RUN sed -i s/deb.debian.org/archive.debian.org/g /etc/apt/sources.list
-RUN apt-get update && apt-get -y install software-properties-common openssh-server sudo libzip-dev libicu-dev git zip unzip apache2 apache2-utils ssl-cert
+RUN apt-get update && apt-get -y install software-properties-common openssh-server sudo libzip-dev libicu-dev git zip  \
+    unzip apache2 apache2-utils ssl-cert rsync wget
 RUN docker-php-ext-install mysqli zip intl
 RUN useradd -rm -d /home/jetbrains -s /bin/bash -g root -G sudo -u 1000 jetbrains
 RUN echo 'jetbrains:jetbrains' | chpasswd
@@ -23,6 +24,9 @@ RUN echo "xdebug.coverage_enable=1" >> /usr/local/etc/php/php.ini
 RUN echo "xdebug.output_dir=/opt/project/xdebug_snapshots" >> /usr/local/etc/php/php.ini
 RUN echo "xdebug.log=/opt/project/xdebug_logs/xdebug27php70.log" >> /usr/local/etc/php/php.ini
 RUN echo "xdebug.remote_log=/opt/project/xdebug_logs/xdebug27php70.log" >> /usr/local/etc/php/php.ini
+WORKDIR /tmp
+RUN wget -O phpunit https://phar.phpunit.de/phpunit-6.phar
+RUN chmod +x phpunit
 EXPOSE 80
 EXPOSE 443
 EXPOSE 22

@@ -3,7 +3,7 @@ RUN echo 'memory_limit = 2048M' >> /usr/local/etc/php/conf.d/docker-php-memlimit
 COPY --from=composer /usr/bin/composer /usr/bin/composer
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt-get -y install software-properties-common openssh-server sudo git libzip-dev zip libicu-dev \
-    unzip apache2 apache2-utils ssl-cert iputils-ping rsync
+    unzip apache2 apache2-utils ssl-cert iputils-ping rsync wget
 RUN docker-php-ext-install mysqli zip intl
 RUN pecl install xdebug
 RUN docker-php-ext-enable xdebug
@@ -19,6 +19,9 @@ RUN echo "xdebug.log=/opt/project/xdebug_logs/xdebug31php81.log" >> /usr/local/e
 RUN a2enmod ssl
 RUN a2enmod socache_shmcb
 RUN a2ensite default-ssl.conf
+WORKDIR /tmp
+RUN wget -O phpunit https://phar.phpunit.de/phpunit-10.phar
+RUN chmod +x phpunit
 EXPOSE 80
 EXPOSE 443
 EXPOSE 22

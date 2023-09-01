@@ -2,7 +2,8 @@ FROM php:8.0-apache
 RUN echo 'memory_limit = 2048M' >> /usr/local/etc/php/conf.d/docker-php-memlimit.ini
 COPY --from=composer /usr/bin/composer /usr/bin/composer
 ENV DEBIAN_FRONTEND=noninteractive
-RUN apt-get update && apt-get -y install software-properties-common openssh-server sudo git libzip-dev zip libicu-dev unzip apache2 apache2-utils ssl-cert iputils-ping
+RUN apt-get update && apt-get -y install software-properties-common openssh-server sudo git libzip-dev zip libicu-dev  \
+    unzip apache2 apache2-utils ssl-cert iputils-ping rsync wget
 RUN docker-php-ext-install mysqli zip intl
 RUN useradd -rm -d /home/jetbrains -s /bin/bash -g root -G sudo -u 1000 jetbrains
 RUN echo 'jetbrains:jetbrains' | chpasswd
@@ -17,6 +18,9 @@ RUN echo "xdebug.log=/opt/project/xdebug_logs/xdebug31php80.log" >> /usr/local/e
 RUN a2enmod ssl
 RUN a2enmod socache_shmcb
 RUN a2ensite default-ssl.conf
+WORKDIR /tmp
+RUN wget -O phpunit https://phar.phpunit.de/phpunit-9.phar
+RUN chmod +x phpunit
 EXPOSE 80
 EXPOSE 443
 EXPOSE 22

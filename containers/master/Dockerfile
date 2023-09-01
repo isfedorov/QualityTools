@@ -5,8 +5,9 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 # Install dependencies required to build PHP from source, Apache, and other essential tools
 RUN apt-get update && \
-    apt-get install -y git build-essential autoconf pkgconf re2c bison libxml2-dev libsqlite3-dev libonig-dev libzip-dev \
-                       curl libcurl4-openssl-dev libssl-dev libapache2-mod-php apache2 apache2-dev libpng-dev libjpeg-dev libfreetype-dev libwebp-dev libxpm-dev
+    apt-get install -y git build-essential autoconf pkgconf re2c bison libxml2-dev libsqlite3-dev libonig-dev libzip-dev  \
+    curl libcurl4-openssl-dev libssl-dev libapache2-mod-php apache2 apache2-dev libpng-dev libjpeg-dev  \
+    libfreetype-dev libwebp-dev libxpm-dev rsync wget
 
 
 # Clone the PHP repository from GitHub
