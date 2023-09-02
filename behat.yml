@@ -1,16 +1,16 @@
 # behat.yml
 default:
-  extensions:
-    DVDoug\Behat\CodeCoverage\Extension:
-      filter:
-        include:
-          directories:
-            'src': ~
-      reports:
-        html:
-          target: build/coverage-behat
-        text:
-          showColors: true
+#  extensions:
+#    DVDoug\Behat\CodeCoverage\Extension:
+#      filter:
+#        include:
+#          directories:
+#            'src': ~
+#      reports:
+#        html:
+#          target: build/coverage-behat
+#        text:
+#          showColors: true
   autoload:
     '': '%paths.base%/tests/Behat/features/bootstrap'
   suites:

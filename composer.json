@@ -14,26 +14,28 @@
     "php": "^8.2"
   },
   "require-dev": {
-    "rector/rector": "@stable",
-    "phing/phing": "@stable",
-    "consolidation/robo": "@stable",
-    "codeception/codeception": "@stable",
+    "rector/rector": "^0.18",
+    "phing/phing": "^2.17",
+    "consolidation/robo": "^4",
+    "codeception/codeception": "^5",
     "codeception/module-asserts": "*",
     "codeception/module-phpbrowser": "*",
-    "behat/behat": "@stable",
-    "phpspec/phpspec": "@stable",
-    "mockery/mockery": "@stable",
-    "phpspec/prophecy": "@stable",
-    "laravel/pint": "@stable",
-    "squizlabs/php_codesniffer": "@stable",
-    "phpmd/phpmd": "@stable",
-    "friendsofphp/php-cs-fixer": "@stable",
-    "vimeo/psalm": "@stable",
-    "phpstan/phpstan": "@stable",
-    "laravel/framework": "@stable",
-    "bamarni/composer-bin-plugin": "@stable",
-    "slevomat/coding-standard": "@stable",
-    "dvdoug/behat-code-coverage": "@stable"
+    "phpunit/phpunit": "^10",
+    "behat/behat": "^v3",
+    "phpspec/phpspec": "dev-main",
+    "phpspec/prophecy": "dev-master",
+    "mockery/mockery": "^1.6",
+    "pestphp/pest": "^v2",
+    "laravel/pint": "^v1.11",
+    "squizlabs/php_codesniffer": "^3.7",
+    "phpmd/phpmd": "^2.13",
+    "friendsofphp/php-cs-fixer": "^v3.23",
+    "vimeo/psalm": "^5.15",
+    "phpstan/phpstan": "^1.10",
+    "laravel/framework": "^v10.20",
+    "bamarni/composer-bin-plugin": "^1.8",
+    "slevomat/coding-standard": "^8.13",
+    "dvdoug/behat-code-coverage": "^v5.3"
   },
   "scripts": {
     "phpcs": "vendor/bin/phpcs src tests --standard=phpcs.xml",
@@ -41,7 +43,8 @@
     "php-cs-fixer-fix": "php-cs-fixer fix src tests --config=.php-cs-fixer.php",
     "phpmd": "phpmd src xml codesize,design,naming,controversial,unusedcode",
     "psalm": "psalm -c psalm.xml --show-info=true --find-unused-code --find-unused-psalm-suppress src tests",
-    "phpstan": "phpstan analyse -c phpstan-config.neon --memory-limit=4G"
+    "phpstan": "phpstan analyse -c phpstan-config.neon --memory-limit=4G",
+    "pint": "pint src tests --configs configs/pint.json"
   },
   "config": {
     "allow-plugins": {

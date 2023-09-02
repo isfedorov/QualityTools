@@ -5,17 +5,17 @@
       <directory>tests/PhpUnit</directory>
     </testsuite>
   </testsuites>
-  <coverage includeUncoveredFiles="true" pathCoverage="true" ignoreDeprecatedCodeUnits="true" disableCodeCoverageIgnore="true">
-    <report>
-      <clover outputFile="coverage/clover.xml"/>
-      <cobertura outputFile="coverage/cobertura.xml"/>
-      <crap4j outputFile="coverage/crap4j.xml" threshold="50"/>
-      <html outputDirectory="coverage" lowUpperBound="50" highLowerBound="90"/>
-      <php outputFile="coverage/coverage.php"/>
-      <text outputFile="coverage/coverage.txt" showUncoveredFiles="false" showOnlySummary="true"/>
-      <xml outputDirectory="coverage"/>
-    </report>
-  </coverage>
+<!--  <coverage includeUncoveredFiles="true" pathCoverage="true" ignoreDeprecatedCodeUnits="true" disableCodeCoverageIgnore="true">-->
+<!--    <report>-->
+<!--      <clover outputFile="coverage/clover.xml"/>-->
+<!--      <cobertura outputFile="coverage/cobertura.xml"/>-->
+<!--      <crap4j outputFile="coverage/crap4j.xml" threshold="50"/>-->
+<!--      <html outputDirectory="coverage" lowUpperBound="50" highLowerBound="90"/>-->
+<!--      <php outputFile="coverage/coverage.php"/>-->
+<!--      <text outputFile="coverage/coverage.txt" showUncoveredFiles="false" showOnlySummary="true"/>-->
+<!--      <xml outputDirectory="coverage"/>-->
+<!--    </report>-->
+<!--  </coverage>-->
   <source>
     <include>
       <directory suffix=".php">src</directory>
