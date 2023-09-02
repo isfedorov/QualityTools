@@ -6,9 +6,9 @@ class DataProviders
 {
     public static function provideArray()
     {
-        return [
-            0 => [[1, 2, 3]],
-            1 => [[4, 5, 6]]
-        ];
+        return array(
+            0 => array(array(1, 2, 3)),
+            1 => array(array(4, 5, 6)),
+        );
     }
 }

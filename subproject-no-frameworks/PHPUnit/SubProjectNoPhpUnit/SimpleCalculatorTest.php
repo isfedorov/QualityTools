@@ -16,10 +16,10 @@ class SimpleCalculatorTest extends TestCase
 
     public static function provideArray(): array
     {
-        return [
-            '1' => [1],
-            2 => [2],
-            '3' => [3]
-        ];
+        return array(
+            '1' => array(1),
+            2 => array(2),
+            '3' => array(3),
+        );
     }
 }

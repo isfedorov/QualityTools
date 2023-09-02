@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace SubProjectNoPhpUnit\PhpUnit;
@@ -7,12 +8,18 @@ use PHPUnit\Framework\TestCase;
 use Prophecy\Prophet;
 use QualityTools\General\SimpleCalculator;
 
+require_once 'BaseCalculatorTest.php';
+require_once 'DataProviders.php';
+require_once __DIR__.'/../../../src/SimpleCalculator.php';
+require_once __DIR__.'/../../../src/ArrayProvider.php';
+
 class SampleProphecyTest extends TestCase
 {
     private $prophecy;
+
     private $prophet;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->prophet = new Prophet();
     }
@@ -28,7 +35,7 @@ class SampleProphecyTest extends TestCase
         static::assertEquals(15, $res);
     }
 
-    protected function tearDown()
+    protected function tearDown(): void
     {
         $this->prophet->checkPredictions();
     }
@@ -38,9 +45,9 @@ class DProvider
 {
     public static function provideArray()
     {
-        return [
-            0 => [[1, 2, 3]],
-            1 => [[4, 5, 6]]
-        ];
+        return array(
+            0 => array(array(1, 2, 3)),
+            1 => array(array(4, 5, 6)),
+        );
     }
 }

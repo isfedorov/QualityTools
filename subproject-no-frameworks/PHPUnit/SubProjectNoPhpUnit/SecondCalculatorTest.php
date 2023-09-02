@@ -1,6 +1,6 @@
 <?php
 
-namespace SubProjectPSR0Auto\PhpUnit;
+namespace SubProjectNoPhpUnit\PhpUnit;
 
 use PHPUnit\Framework\TestCase;
 
