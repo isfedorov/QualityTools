@@ -7,7 +7,7 @@ services:
     volumes:
       - .:/opt/project
       - ~/Documents/Deployment/SFTP:/home/jetbrains
-      - ~/.ssh/id_rsa.pub:/home/jetbrains/.ssh/keys/id_rsa.pub:ro
+      - ~/.ssh/id_ed25519.pub:/home/jetbrains/.ssh/keys/id_ed25519.pub:ro
       - ./htdocs:/var/www/html
     ports:
       - "3080:80"
@@ -19,7 +19,7 @@ services:
     volumes:
       - .:/opt/project
       - ~/Documents/Deployment/SFTP:/home/jetbrains
-      - ~/.ssh/id_rsa.pub:/home/jetbrains/.ssh/keys/id_rsa.pub:ro
+      - ~/.ssh/id_ed25519.pub:/home/jetbrains/.ssh/keys/id_ed25519.pub:ro
       - ./htdocs:/var/www/html
     ports:
       - "3180:80"
@@ -43,7 +43,7 @@ services:
     volumes:
       - .:/opt/project
       - ~/Documents/Deployment/SFTP:/home/jetbrains
-      - ~/.ssh/id_rsa.pub:/home/jetbrains/.ssh/keys/id_rsa.pub:ro
+      - ~/.ssh/id_ed25519.pub:/home/jetbrains/.ssh/keys/id_ed25519.pub:ro
       - ./htdocs:/var/www/html
     ports:
       - "3380:80"
@@ -55,7 +55,7 @@ services:
     volumes:
       - .:/opt/project
       - ~/Documents/Deployment/SFTP:/home/jetbrains
-      - ~/.ssh/id_rsa.pub:/home/jetbrains/.ssh/keys/id_rsa.pub:ro
+      - ~/.ssh/id_ed25519.pub:/home/jetbrains/.ssh/keys/id_ed25519.pub:ro
       - ./htdocs:/var/www/html
     ports:
       - "3480:80"
@@ -67,7 +67,7 @@ services:
     volumes:
       - .:/opt/project
       - ~/Documents/Deployment/SFTP:/home/jetbrains
-      - ~/.ssh/id_rsa.pub:/home/jetbrains/.ssh/keys/id_rsa.pub:ro
+      - ~/.ssh/id_ed25519.pub:/home/jetbrains/.ssh/keys/id_ed25519.pub:ro
       - ./htdocs:/var/www/html
     ports:
       - "3580:80"
@@ -79,7 +79,7 @@ services:
     volumes:
       - .:/opt/project
       - ~/Documents/Deployment/SFTP:/home/jetbrains
-      - ~/.ssh/id_rsa.pub:/home/jetbrains/.ssh/keys/id_rsa.pub:ro
+      - ~/.ssh/id_ed25519.pub:/home/jetbrains/.ssh/keys/id_ed25519.pub:ro
       - ./htdocs:/var/www/html
     ports:
       - "3680:80"
@@ -91,7 +91,7 @@ services:
     volumes:
       - .:/opt/project
       - ~/Documents/Deployment/SFTP:/home/jetbrains
-      - ~/.ssh/id_rsa.pub:/home/jetbrains/.ssh/keys/id_rsa.pub:ro
+      - ~/.ssh/id_ed25519.pub:/home/jetbrains/.ssh/keys/id_ed25519.pub:ro
       - ./htdocs:/var/www/html
     ports:
       - "3780:80"
@@ -103,7 +103,7 @@ services:
     volumes:
       - .:/opt/project
       - ~/Documents/Deployment/SFTP:/home/jetbrains
-      - ~/.ssh/id_rsa.pub:/home/jetbrains/.ssh/keys/id_rsa.pub:ro
+      - ~/.ssh/id_ed25519.pub:/home/jetbrains/.ssh/keys/id_ed25519.pub:ro
       - ./htdocs:/var/www/html
     ports:
       - "3880:80"
@@ -115,7 +115,7 @@ services:
     volumes:
       - .:/opt/project
       - ~/Documents/Deployment/SFTP:/home/jetbrains
-      - ~/.ssh/id_rsa.pub:/home/jetbrains/.ssh/keys/id_rsa.pub:ro
+      - ~/.ssh/id_ed25519.pub:/home/jetbrains/.ssh/keys/id_ed25519.pub:ro
       - ./htdocs:/var/www/html
     ports:
       - "3980:80"
@@ -127,7 +127,7 @@ services:
     volumes:
       - .:/opt/project
       - ~/Documents/Deployment/SFTP:/home/jetbrains
-      - ~/.ssh/id_rsa.pub:/home/jetbrains/.ssh/keys/id_rsa.pub:ro
+      - ~/.ssh/id_ed25519.pub:/home/jetbrains/.ssh/keys/id_ed25519.pub:ro
       - ./htdocs:/var/www/html
     ports:
       - "4080:80"
@@ -139,7 +139,7 @@ services:
     volumes:
       - .:/opt/project
       - ~/Documents/Deployment/SFTP:/home/jetbrains
-      - ~/.ssh/id_rsa.pub:/home/jetbrains/.ssh/keys/id_rsa.pub:ro
+      - ~/.ssh/id_ed25519.pub:/home/jetbrains/.ssh/keys/id_ed25519.pub:ro
       - ./htdocs:/var/www/html
     ports:
       - "4180:80"
@@ -151,7 +151,7 @@ services:
     volumes:
       - .:/opt/project
       - ~/Documents/Deployment/SFTP:/home/jetbrains
-      - ~/.ssh/id_rsa.pub:/home/jetbrains/.ssh/keys/id_rsa.pub:ro
+      - ~/.ssh/id_ed25519.pub:/home/jetbrains/.ssh/keys/id_ed25519.pub:ro
       - ./htdocs:/var/www/html
     ports:
       - "4280:80"
@@ -163,7 +163,7 @@ services:
     volumes:
       - .:/opt/project
       - ~/Documents/Deployment/SFTP:/home/jetbrains
-      - ~/.ssh/id_rsa.pub:/home/jetbrains/.ssh/keys/id_rsa.pub:ro
+      - ~/.ssh/id_ed25519.pub:/home/jetbrains/.ssh/keys/id_ed25519.pub:ro
       - ./htdocs:/var/www/html
     ports:
       - "4380:80"
@@ -175,7 +175,7 @@ services:
     volumes:
       - .:/opt/project
       - ~/Documents/Deployment/SFTP:/home/jetbrains
-      - ~/.ssh/id_rsa.pub:/home/jetbrains/.ssh/keys/id_rsa.pub:ro
+      - ~/.ssh/id_ed25519.pub:/home/jetbrains/.ssh/keys/id_ed25519.pub:ro
       - ./htdocs:/var/www/html
     ports:
       - "4480:80"
@@ -187,7 +187,7 @@ services:
     volumes:
       - .:/opt/project
       - ~/Documents/Deployment/SFTP:/home/jetbrains
-      - ~/.ssh/id_rsa.pub:/home/jetbrains/.ssh/keys/id_rsa.pub:ro
+      - ~/.ssh/id_ed25519.pub:/home/jetbrains/.ssh/keys/id_ed25519.pub:ro
       - ./htdocs:/var/www/html
     ports:
       - "4580:80"
@@ -199,7 +199,7 @@ services:
     volumes:
       - .:/opt/project
       - ~/Documents/Deployment/SFTP:/home/jetbrains
-      - ~/.ssh/id_rsa.pub:/home/jetbrains/.ssh/keys/id_rsa.pub:ro
+      - ~/.ssh/id_ed25519.pub:/home/jetbrains/.ssh/keys/id_ed25519.pub:ro
       - ./htdocs:/var/www/html
     ports:
       - "4680:80"
@@ -211,7 +211,7 @@ services:
     volumes:
       - .:/opt/project
       - ~/Documents/Deployment/SFTP:/home/jetbrains
-      - ~/.ssh/id_rsa.pub:/home/jetbrains/.ssh/keys/id_rsa.pub:ro
+      - ~/.ssh/id_ed25519.pub:/home/jetbrains/.ssh/keys/id_ed25519.pub:ro
       - ./htdocs:/var/www/html
     ports:
       - "4780:80"
@@ -223,14 +223,14 @@ services:
     volumes:
       - .:/opt/project
       - ~/Documents/Deployment/SFTP:/home/jetbrains
-      - ~/.ssh/id_rsa.pub:/home/jetbrains/.ssh/keys/id_rsa.pub:ro
+      - ~/.ssh/id_ed25519.pub:/home/jetbrains/.ssh/keys/id_ed25519.pub:ro
       - ./htdocs:/var/www/html
   ssh:
     build: ./containers/ssh
     volumes:
       - .:/home/jetbrains
       - ~/Documents/Deployment/SFTP:/home/jetbrains
-      - ~/.ssh/id_rsa.pub:/home/jetbrains/.ssh/keys/id_rsa.pub:ro
+      - ~/.ssh/id_ed25519.pub:/home/jetbrains/.ssh/keys/id_ed25519.pub:ro
       - ./htdocs:/var/www/html
     ports:
       - "3022:22"
