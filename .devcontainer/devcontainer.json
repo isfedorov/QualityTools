@@ -1,4 +1,5 @@
 {
 	"name": "QualityTools",
-	"image": "php:latest"
+	"image": "ubuntu:latest",
+
 }
